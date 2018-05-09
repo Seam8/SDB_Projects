@@ -11,6 +11,7 @@ ydist = (Nny - N0) / float(ny)
 rtx = (Eny - E0) / float(ny)
 rty = (Nnx - N0) / float(nx)'''
 
+
 def getNcPath(NetCdf_data_path):
 	return [f for f in os.listdir(NetCdf_data_path) if f.endswith('.nc')]
 
