@@ -8,7 +8,8 @@ from sklearn.metrics import r2_score
 import xml.etree.ElementTree as ET
 import pandas as pd
 
-
+##########################################################################
+# Files paths definition
 def Get_RGBNIR(src_ds):
 
     NIR = src_ds.GetRasterBand(4).ReadAsArray()
@@ -31,8 +32,13 @@ def GetSimpleFiles(pattern, directory=os.curdir, TimLim=1980):
     
     files = os.listdir(os.path.abspath(directory))
     for current_file in fnmatch.filter(files, pattern):
-        yield current_file           
-        
+        yield current_file  
+
+def getExtentFilename(NetCdf_data_path, endswith='.tif'):
+    return [f for f in os.listdir(NetCdf_data_path) if f.endswith(endswith)]
+
+#______________________________________________________________________________
+
 def isInsid(E, N, E_range, N_range):
     if (E_range[0] < E < E_range[1]):
         if (N_range[0] < N < N_range[1]):
@@ -373,6 +379,7 @@ def Get_R2(coeff, Samples, NIRSamples, NBands):
             elif N==0:
                 R2.append([])
     return R2
+
 def create_mask_from_vector(vector_data_path, cols, rows, geo_transform,
                             projection, target_value=1, format=gdal.GDT_UInt16):
     """Rasterize the given vector (wrapper for gdal.RasterizeLayer)."""
@@ -401,6 +408,8 @@ def vectors_to_raster(file_paths, rows, cols, geo_transform, projection):
         #print(np.unique(band),'global :',np.unique(labeled_pixels))
     return labeled_pixels
 
+##########################################################################
+# Depth invariant index computation    
 def get_a(I, J):
     index = np.logical_and(~np.isnan(I), ~np.isnan(J))
     Cov_mat = np.cov(I[index],J[index], bias=1)
@@ -412,6 +421,8 @@ def get_kikj(I, J):
 
 def get_dij_map(Xi, Xj, I, J):
     return Xi - (get_kikj(I, J) * Xj)
+
+##########################################################################
 
 
 def output_multipolygone_from_raster_band(Classif,raster_NoDataValue,classes,classes_attributes,outputh_file):
