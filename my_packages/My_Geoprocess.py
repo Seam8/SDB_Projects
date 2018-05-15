@@ -296,7 +296,7 @@ def write_raster(fname, data, geo_transform, projection, DriverName='GTiff'):
     
 
     
-def write_raster2(fname, data, geo_transform, projection, DriverName="GTiff", formatMem=gdal.GDT_UInt16 ):
+def write_raster2(fname, data, geo_transform, projection, DriverName="GTiff", formatMem=gdal.GDT_UInt16, Offset=None ):
     """Create a GeoTIFF file with the given data."""
     
     driver = gdal.GetDriverByName(DriverName)
@@ -318,11 +318,21 @@ def write_raster2(fname, data, geo_transform, projection, DriverName="GTiff", fo
     if NBands > 1:
         for b in range(NBands): 
             band = dataset.GetRasterBand(b+1)
-            band.WriteArray(data[:,:,b])
+            if Offset == None:
+                band.WriteArray(data[:,:,b])
+            else:
+                band.WriteArray(data[:,:,b], xoff=Offset[0], yoff=Offset[1])
     else:
         band = dataset.GetRasterBand(1)
-        band.WriteArray(data[:,:])
-    dataset = None  # Close the file
+        if Offset == None:
+            band.WriteArray(data[:,:])
+        else:
+            band.WriteArray(data[:,:], xoff=Offset[0], yoff=Offset[1])
+        
+    if DriverName == 'MEM':
+        return dataset
+    else:
+        dataset = None  # Close the file
 
     
 def Get_LinReg(Samples, NIRSamples, NBand):
@@ -425,10 +435,29 @@ def get_dij_map(Xi, Xj, I, J):
 ##########################################################################
 
 
-def output_multipolygone_from_raster_band(Classif,raster_NoDataValue,classes,classes_attributes,outputh_file):
+def output_multipolygone_from_raster_layer(Classif,raster_NoDataValue,classes,classes_attributes,Output_File):
     """
     Convert an input 2D numpy array to shapefile, merging all pixels with the same value.
     @inspired by : output_ogr_from_2darray() , from : damo_ma
+    
+    usage :
+        Classif_Tiff_File = 'ClassifTestVectoirze.tif'
+        Classif = gdal.Open( Classif_Tiff_File)
+        classes = np.arange(1,9)
+        attributes_n = 5
+        attributes_values = np.random.random_sample((len(classes),attributes_n))
+        NoDataValue = False
+
+        # assign classes attributes names
+        # Important : Driver "ESRI Shapefile" limit field name to 10 characters!!
+        classes_attributes = { 'names' : ['attr_'+str(i) for i in range(attributes_n)]}
+        # assign classes attributes values
+        for i in range(classes.size):
+            classes_attributes[classes[i]] = attributes_values[i,:]
+
+        output_file = "test.shp"
+
+        output_ogr_from_raster_band(Classif,False,classes,classes_attributes,output_file)
     """
     ##########################################################################
     # create 1 bands in raster file in Memory
@@ -456,7 +485,7 @@ def output_multipolygone_from_raster_band(Classif,raster_NoDataValue,classes,cla
 
     # create "vector polygons for all connected regions of pixels in the raster sharing a common pixel value"
     # see documentation : www.gdal.org/gdal_polygonize.html
-    gdal.Polygonize( raster_band, raster_band.GetMaskBand(), input_layer,  0)
+    gdal.Polygonize( raster_band, None, input_layer,  0)
 
     print( 'Create a Vector Layer of %s Features in Memory' % (input_layer.GetFeatureCount()))
     print( 10*'=')
@@ -472,13 +501,13 @@ def output_multipolygone_from_raster_band(Classif,raster_NoDataValue,classes,cla
     print( 'Join classification based on values in field "%s"' % field_name)
     print( 10*'=')
     # Remove output shapefile if it already exists
-    if os.path.exists(outputh_file):
-        driver.DeleteDataSource(outputh_file) 
-    out_datasource = driver.CreateDataSource( outputh_file )
+    if os.path.exists(Output_File):
+        driver.DeleteDataSource(Output_File) 
+    out_datasource = driver.CreateDataSource( Output_File )
     
     # create a new layer with wkbMultiPolygon, Spatial Reference as middle OGR file = input_layer
     multi_layer = out_datasource.CreateLayer("merged", input_layer.GetSpatialRef(), ogr.wkbMultiPolygon)
-    print( 'Create output file in %s' % outputh_file)
+    print( 'Create output file in %s' % Output_File)
     print( 10*'=')
     
     # Add the fields we're interested in
@@ -521,5 +550,4 @@ def output_multipolygone_from_raster_band(Classif,raster_NoDataValue,classes,cla
     ogr_datasource  = None
     out_datasource  = None
     print(20*'=')
-
-        
+    
