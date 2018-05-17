@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence C</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S196302000-18</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20131017</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.5</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19641126</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19630326</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Les décalages en abscisse et en ordonnée indiqués sur les minutes ont été appliqués lors de la numérisation.&#13;
+Pour être cohérent avec la note n° 39M/SH6 du 12-01-1970 les sondes de la minute 300-8-118 ont été diminuées de 30 cm (Publication 6949 fiche n° 5-1983).</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20150526 054647.772</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-40.700" max_value="0.500" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Source_Name" default_elevation="false" hidden="false" category="2" direction="0" type="5" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="1781.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s196302000-18.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["WG84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 091936.265</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur KELVIN-HUGHES"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1b Code S44 5ème édition</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19630326</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Bathymetrie, redaction de sondes, Nouvelle Caledonie, Baie de Nakety.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Bathymetrie, redaction de sondes, Nouvelle Caledonie, Baie de Nakety.</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Sondes reduites de la maree observee sur zone.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>Tx= -11,64&#13;
+Ty= -348,6&#13;
+Tz= 291.98&#13;
+Paramètres de IGN72 NCA vers WGS84 de la DITTT.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Localisation optique avec deux ou trois relevements.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Sondeur Kelvin-hugues MS26F. Precision estimee.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>890 Nouvelle Caledonie - BAIE_DE_NAKETY</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IHP VICARIOT</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>1,782</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_NCA - UTM58S_Nouvelle-Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MHNC Mission Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"COR CORAIL"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>crenna</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2.3.0</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>166.0641</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>166.09385</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-21.5312667</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-21.4909333</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Fiabilisé</Value>
+  </Attribute>
+  <Attribute name="z_cons">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="z_vari">
+    <Value>0.01</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

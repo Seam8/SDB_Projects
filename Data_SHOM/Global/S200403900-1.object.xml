@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence A2</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S200403900-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20051017</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.25</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20041006</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20041005</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>1</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 073820.331</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-9.610" max_value="-2.660" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="54013.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200403900-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 152708.764</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 17"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZCH  Zone complètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>Ordre spécial</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20041005</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>DONNEES ACQUISES A L'AIDE D'UN SONDEUR VERTICAL DESO17</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>NOUVELLE-CALEDONIE - ILE DES PINS - BAIE DE KUTO</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>VOIR PARAGRAPHE 3 DU RP</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>VOIR PARAGRAPHE 2.4.3 DU RP</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>VOIR PARAGRAPHE 4.3 DU RP</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>157 Nouvelle Caledonie - Pins (ile) Kuto</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA MEYRAT</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>54,014</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"BNCV - Vedette BHNC Base Hydro Nouvelle Calédonie"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>Z  Non specifie</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>Z  Precision non specifiee</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>10</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>yadam</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>version 2.3.x</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>167.4349</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>167.44</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-22.6611</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-22.6577</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Annule et remplace les levés antérieurs</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

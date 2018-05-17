@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="OBJNAM">
+    <Value>S199105600-10</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20060320</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19881130</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19880201</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>La minute est delimitee par une zone de hauts-fonds dangereux. Porteurs : LA BOUSSOLE,CORAIL</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160519 163739.507</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-19.600" max_value="-0.700" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="3068.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s199105600-10.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 124632.046</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZRH  Zone raisonnablement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>2(A) Code S44 petit fond 2 qualification SHOM A</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19881130</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>NOUVELLE CALEDONIE De la passe de Yande à la passe Leleizour, Approches Nord Ouest de Balabio.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>NOUVELLE CALEDONIE De la passe de Yande à la passe Leleizour, Approches Nord Ouest de Balabio.</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes ont ete corrigees de la maree observee à Poingam. Les sondes sont reelles. Les etalonnages ont ete effectues à la barre.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>TX : 97.295  TY : -263.237  TZ : 310.866 Ex : -1.599931  Ey : 0.938952  Ez : 3.141180 k : 0.000013325864</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>La localisation des porte-sondeurs a ete assuree par une chaine Trident qui a ete etalonnee par des mesures optiques.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Les sondeurs utilises ont ete l'ATLAS DESO 20  pour la BOUSSOLE et ses vedettes et l'ATLAS DESO 10 pour le CORAIL et la coralline.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>487 Nouvelle Caledonie - Poingam (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA CHAMPAGNE IPA FOURGASSIE</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>3,069</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_NCA - UTM58S_Nouvelle-Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"BOU BOUSSOLE"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>crenna</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2.3</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>164.0416</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>164.0973</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.0002167</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-19.9449</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Non renseigné</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

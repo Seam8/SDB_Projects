@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence B</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S199402400-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20110608</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19940407</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19940404</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>2011-06-08 GNR: le rapport ne mentionnant pas de caracterisation et de code S44, je les ai deduit en accord avec le chef DTI.&#13;</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20151201 095532.234</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-23.100" max_value="0.500" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="5596.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s199402400-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 131000.139</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZHSETF Zone hydrographiée sans exploration totale du fond</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1b Code S44 5ème édition</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19940404</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Leve bathymetrique au sondeur DESO20.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Abords de l ile de Mouac.</Value>
+  </Attribute>
+  <Attribute name="fincom">
+    <Value>20000101</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>sondes reduites de la maree observee a Poum.Le zero de reduction des sondes est situe a 4,034 m au dessous du repere fondamental en bronze a Poum.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>La localisation fut assuree au DGPS HF ( station de Mandjelia). Voir par.3 du RP.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>rp 92 MOP/NOU/NP du 25/04/1994</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>040 Nouvelle Caledonie - Poum Baie de Bonare (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>DOLOU</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>5,597</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_NCA - UTM58S_Nouvelle-Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LPCV - LAPLACE (BHO) Vedettes"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>50</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>cgarnier</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>GEOLIB2.3.0</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>163.9841181</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>164.0144215</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.2390756</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.2097493</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

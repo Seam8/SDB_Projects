@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence C</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S196101500-7</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20031104</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.5</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19621130</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19611101</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Ancienne référence de la minute : 300-8-57&#13;
+&#13;
+Bathymetry replaced by pjbernar&#13;
+lot importe dans S196101500 le 21/06/2013</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160428 135203.551</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-2460.000" max_value="-100.000" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="561.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s196101500-7.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["WG84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 090931.562</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur KELVIN-HUGHES"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>2 Code S44 5ème édition</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>ATTENTE  En cours d'intégration</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19611115</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>OCEAN PACIFIQUE - MER DE CORAIL - NOUVELLE CALEDONIE - COTE EST - EXTERIEUR DU GRAND RECIF</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>OCEAN PACIFIQUE - MER DE CORAIL - NOUVELLE CALEDONIE - COTE EST - EXTERIEUR DU GRAND RECIF</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Néant.&#13;</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>Tx= -11.64&#13;
+Ty= -348.6&#13;
+Tz= 291.98</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Sondage à l'estime.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Precision du sondeur.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>NIV_MOY  Niveau Moyen (leves au large)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IH1 RIBET</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>562</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_NCA - UTM58S_Nouvelle-Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MHNC Mission Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"DUN DUNKERQUOISE"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>6095</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>crenna - mbastien 06/05/2015</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2.3.0</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>165.82285</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>165.95395</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-21.4154667</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-21.2478333</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="z_cons">
+    <Value>1</Value>
+  </Attribute>
+  <Attribute name="z_vari">
+    <Value>0.023</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

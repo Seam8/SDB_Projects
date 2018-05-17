@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence B</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S199804700-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20000627</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>10</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19970326</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19960212</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Verification de hauts-fonds abords ile des Pins. Sondeurs Raytheon et DESO20.</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>3</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160520 075246.522</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-1570.000" max_value="-55.300" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="2240.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s199804700-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 133333.608</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur RAYTHEON","Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZHSETF Zone hydrographiée sans exploration totale du fond</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1b Code S44 5ème édition</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19960326</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Leve bathymetrique au sondeur vertical RAYTHEON.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Recherches aux abords de l'Ile des Pins. Sondes 18m, 49m, 55m, 91m et 99m.</Value>
+  </Attribute>
+  <Attribute name="fincom">
+    <Value>99990101</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Sondes non reduites de la maree. Celerite: le profil adopte est celui mesure par l ORSTOM le 24-03-1960.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>Leve en WGS 84.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Precision donnee dans le rapport particulier. Localisation GPS differentiel.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Precision donnee dans le rapport particulier. Sondeur Raytheon precision meilleur que 1% de la profondeur.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>NIV_MOY  Niveau Moyen (leves au large)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IC2ETA DENIEL</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>2,241</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_WGS84 UTM58S_WGS 1984</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LPC LAPLACE (BHO)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>500</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REC  Recherche</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>cgarnier</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2.3.0</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>166.9603556</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>168.3776234</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-23.4670677</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-22.9340056</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

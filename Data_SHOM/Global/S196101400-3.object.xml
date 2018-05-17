@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="OBJNAM">
+    <Value>S196101400-3</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20080401</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19621231</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19610101</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160526 125855.850</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-69.000" max_value="-0.000" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="13845.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s196101400-003.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 090903.968</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Inconnu"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>Inconnu</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>Inconnu</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19610101</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Leve bathymetrique dans la baie de Poya</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>NOUVELLE CALEDONIE - POYA</Value>
+  </Attribute>
+  <Attribute name="fincom">
+    <Value>20000101</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>sondes reduites de la maree observee in situ;le zero de reduction des sondes se situe a 2.086 au dessous du repere GATOVE.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>PBM  Zero des plus basses mers theorique</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>RIBET</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>13,846</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_INTER - UTM58S_INTER</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MHNC Mission Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"ZZZ INCONNU"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>Z  Non specifie</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>Z  Precision non specifiee</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>0  Inconnu</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>clelann</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2008-04-01</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>165.046811</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>165.123147</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-21.470405</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-21.371949</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Non renseigné</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

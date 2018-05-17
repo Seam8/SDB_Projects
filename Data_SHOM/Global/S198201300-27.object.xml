@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="OBJNAM">
+    <Value>S198201300-27</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20030311</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19810122</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19781128</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Par derogation à l'instruction 467 SHOM/EM du  2 mai 1975, les profondeurs superieures à 50 m sont reelles.&#13;
+Porteurs : LA BOUSSOLE,CORAIL,L ESTAFETTE</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>1</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160519 063035.259</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-55.300" max_value="-3.700" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="307.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s198201300-27.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 105731.312</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 10"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZCH  Zone complètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1(A) Code S44 petit fond 1 qualification SHOM A</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19781128</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Cote Est de la Nouvelle Caledonie - Abords de la passe de Toupeti.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Cote Est de la Nouvelle Caledonie - Abords de la passe de Toupeti.</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont corrigees de la maree observee a Thio. Celerite 1530 à 1540 m/s,  les sondes sont reelles et corrigees de l'etalonnage du sondeur.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>TX : 97.295 TY :  -263.237 TZ : 310.866 Ex : -1.599  Ey : 0.838952  Ez : 3.141180  K : 0.000013325864</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>La localisation a ete assuree par une chaine Toran, Trident et Theodolite.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>sondage effectue au sondeur DESO 10.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>046 Nouvelle Caledonie - Thio</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>ICA CAILLIAU IPA SOUQUIERE</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>308</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_NCA - UTM58S_Nouvelle-Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"BOU BOUSSOLE","COR CORAIL","EST ESTAFETTE"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REC  Recherche</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>crenna</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2.3</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>166.3578333</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>166.4379</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-21.651</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-21.5977333</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Non renseigné</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

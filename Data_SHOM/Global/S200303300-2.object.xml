@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence C</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S200303300-2</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20030806</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.5</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20010823</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20010502</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Le zero de reduction des sondes a Noumea est situe a 3,632 m au-dessous du repere fondamental H1, repere en laiton scelle verticalement a l'extremite de la jetee menant au quai des avisos de la base navale Chaleix. Zone non explorée au sondeur latéral.</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 070111.019</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-30.000" max_value="-12.000" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="635.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200303300-2.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 143019.655</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 17"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1 Code S44 petit fond 1 (éviter d'utiliser, voir 1a, 1b)</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20010502</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Zone incompletement hydrographiee a l'exterieur de la zone exploree au sondeur lateral (lot 1)</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Pacifique - Nouvelle-Caledonie - Abords de Noumea</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>NCR - Nouvelle Cal‚donie RGNC</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont corrigees de la celerite et des tirants d'eau et reduites de la maree observee a l'extremite de la jetee  menant au quai des avisos de la base navale Chaleix a Noumea.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>RGNC--&gt;WGD</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir parag 2.5 du rapport particulier.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Precision meilleure que 20 cm + 1% de la profondeur: voir parag 4.3 du rapport particulier.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>016 Nouvelle Caledonie - Noumea (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA Jerome PAILLET</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>636</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"EUGENE-MORIGNAT - Navire mixte EUGENE MORIGNAT (Nouvelle Calédonie)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>50</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>Tradoc 4.2.</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>mlegall</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2001-05-02</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>166.3600081</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>166.4769147</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-22.339912</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-22.294552</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Non statué</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

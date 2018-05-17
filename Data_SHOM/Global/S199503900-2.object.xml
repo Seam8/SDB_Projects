@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence B</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S199503900-2</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20101019</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19950430</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19940901</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>3</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20150526 054647.772</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-24.600" max_value="-6.300" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="165.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s199503900-2.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 131504.405</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZHSETF Zone hydrographiée sans exploration totale du fond</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1b Code S44 5ème édition</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19940901</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>leve bathymetrique</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>leve bathymetrique</Value>
+  </Attribute>
+  <Attribute name="fincom">
+    <Value>20000101</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>sondes reduites de la maree observee a Noumea.le zero de reduction des sondes est situe a 3.632 m au dessous du repere fondamental.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir para 4.2.2 du RP 189 MOP/NOU/NP du 23/05/1995</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Voir para 4.3.5 du RP 189 MOP/NOU/NP du 23/05/1995</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>016 Nouvelle Caledonie - Noumea (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>Le Visage</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>166</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_NCA - UTM58S_Nouvelle-Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LPC LAPLACE (BHO)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>neant</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>poilane</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>GEOLIB2.3.0</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>166.7826201</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>166.7930221</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-22.781241</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-22.7707881</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

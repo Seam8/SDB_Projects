@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence B</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S200400300-2</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20061006</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.56</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20030919</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20030818</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Zone extérieure à la voie recommandée, qui a été insonifiée au sondeur latéral, mais dans laquelle toutes les recherches n'ont pas été faites.</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 072425.034</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-26.300" max_value="-9.500" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="9729.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200400300-2.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 150736.374</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 17"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZRH  Zone raisonnablement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1 Code S44 petit fond 1 (éviter d'utiliser, voir 1a, 1b)</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20030818</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Sondes validées et choisies pour la rédaction de la minute, contenues dans la zone insonifiée au sondeur latéral EG&amp;G260 à l'exclusion des sondes de la voie recommandée.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>PACIFIQUE - NOUVELLE-CALEDONIE - Abords de Poum</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont corrigées de la célérité et du tirant d'eau. Les sondes sont réduites de la marée observée au wharf de Poum. Le zéro de réduction des sondes est situé à 14.382m en-dessous du nouveau repère fondamental F, repère Ebc 4 (NGNC) scellé dans la façade de l'église adventiste de Poum.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>La précision de la localisation est estimée meilleure que 5m à 95%. (Voir §2.5.2 du RP).</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>La précision des sondes est estimée meilleure que 0.3m + 1% de la profondeur. (voir §4.3 du RP).</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>040 Nouvelle Caledonie - Poum Baie de Bonare (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA Jean MEYRAT</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>9,730</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"CHAMBEYRON - Vedette hydrographique CHAMBEYRON (Nouvelle Calédonie)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>50</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>sczygiel</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>163.9613431</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>164.01106</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.2640944</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.2208697</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Complète les levés antérieurs</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

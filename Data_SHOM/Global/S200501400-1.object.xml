@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="OBJNAM">
+    <Value>S200501400-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20060929</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20041117</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20041110</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Profils de calage SPOT, le paramètre résolution, non pertinent, a été mis à 1e9&#13;
+&#13;
+Jun 12, 2012 1:08:08 PM&#13;
+Bathymetry replaced by bjasmin</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 074227.737</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-46.080" max_value="-0.080" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="180223.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200501400-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["WG84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 155401.483</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur Simrad EA300P"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>Non qualifiable en norme S44</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20041110</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Transects bathymétriques</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Transects</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Le zéro de réduction des sondes est situé à 3,77 m sous le repère fondamental A, douille SHOM scellée verticalement dans la stèle Transit de la Caye de l'Observatoire.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Cf. cible DGPS incluse dans le rapport particulier n° 050 MOP/NP du 9 février 2005</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Ecarts aux points de croisement</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>689 Nouvelle Caledonie - BELLONA_CAYE_OBSERVATOIRE</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>ICA Jean Meyrat</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>180,224</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"BNCZ - Zodiac BHNC Base Hydro Nouvelle Calédonie"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>Z  Non specifie</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>Z  Precision non specifiee</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>Hypack V2.12 A  Gold</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>AUTRE  Autre</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>Jean Meyrat</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2.3.X</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>159.3423</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>159.5893</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-21.811</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-21.3299</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Non renseigné</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Non statué</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

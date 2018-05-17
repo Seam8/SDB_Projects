@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="OBJNAM">
+    <Value>S200502000-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20061002</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20050303</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20050228</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 074429.081</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-25.940" max_value="-3.830" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="28406.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200502000-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["WG84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 155650.592</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 17"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZCH  Zone complètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1 Code S44 petit fond 1 (éviter d'utiliser, voir 1a, 1b)</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20050228</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>MOUILLAGES DE HIENGHENE</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>NOUVELLE-CALEDONIE - COTE EST - HIENGHENE</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont réelles et réduites de la marée observée à la marina de hienghène. Le zéro de réduction des sondes est situé à 4,760 m sous le repère fondamental B, douille SHOM scellée horizontalement dans le mur Est du garage municipal.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>VOIR PARAGRAPHE 2.3.2 DU RP 069 MOP/NP DU 9 MARS 2005</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>VOIR PARAGRAPHE 4.3 DU RP 069 MOP/NP DU 9 MARS 2005</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>429 Nouvelle Caledonie - Hienghene (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA Jean MEYRAT</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>28,407</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"BNCV - Vedette BHNC Base Hydro Nouvelle Calédonie"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>25</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>yadam</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>164.9452</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>164.9583</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.683</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.6687</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Non renseigné</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Annule et remplace les levés antérieurs</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

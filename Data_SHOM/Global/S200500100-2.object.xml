@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="OBJNAM">
+    <Value>S200500100-2</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20061129</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20030312</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20020927</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder","found by diver"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>recherche par plongeurs a partir du Chambeyron&#13;
+&#13;
+Jun 12, 2012 7:05:35 AM&#13;
+Bathymetry replaced by bjasmin&#13;
+&#13;
+Sep 4, 2012 8:50:57 AM&#13;
+Bathymetry replaced by gmorvan&#13;
+&#13;
+May 20, 2015 7:08:00 AM&#13;
+Bathymetry replaced by djourdai, modification du bounding polygon</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 073820.331</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-102.000" max_value="-2.500" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="COD_CAPTEUR" default_elevation="false" hidden="false" category="2" direction="0" type="5" min_value="0.000" max_value="1.000" unit=""/&gt;&lt;band name="COD_PORTEUR" default_elevation="false" hidden="false" category="2" direction="0" type="5" min_value="0.000" max_value="1.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="31145.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200500100-2.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["WG84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 153821.717</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 17","Profondimètre"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZHSETF Zone hydrographiée sans exploration totale du fond</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1 Code S44 petit fond 1 (éviter d'utiliser, voir 1a, 1b)</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20041206</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>sondes exterieures a la voie recommandees mais incluses dans la zone investiguee au sonal.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>NOUVELLE-CALEDONIE - COTE OUEST - BAIE DE CHASSELOUP</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont reelles et reduites de la maree observee a Gatope. Le zero de reduction des sondes a Gatope est situe a 7.854 m au-dessous du repere fondamental F, borne en fonte cimentee verticalement dans le sol du monument Krieger de Gatope.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>voir RP paragraphe 2</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>voir RP paragraphe 3</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>502 Nouvelle Caledonie - Chasseloup (baie) (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA Jean MEYRAT</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>31,146</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"MRT - Eugène MORIGNAT - Nouméa","BNCV - Vedette BHNC Base Hydro Nouvelle Calédonie"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>50</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>poulain</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>164.59508</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>164.65317</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-21.0096</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.94177</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Non renseigné</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Annule et remplace les levés antérieurs</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

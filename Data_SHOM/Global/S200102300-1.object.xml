@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence C</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S200102300-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20010309</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20000211</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19990204</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>les metadonnees fournies proposent l'ordre special et le rapport particulier propose de l'ordre 1 (COD__PS44_PT_FOND). l'ensemble de la zone a été sondé au sondeur vertical et au sondeur latéral à l'échelle 1/1000 avec des intercalaires au 1/200</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>1.5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160414 100055.501</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-12.700" max_value="-1.800" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="37504.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200102300-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 135841.358</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1 Code S44 petit fond 1 (éviter d'utiliser, voir 1a, 1b)</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19990204</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Conformement au programme annuel et a la demamnde du Port Autonome de Nouvelle Caledonie,  la BHNC a realise un leve de la petite rade</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Sondes validees et choisies pour la redaction des minutes</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>sondes corrigees de la maree sondes corrigees de la celerite et du tirant d'eau</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>neant.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>voir paragraphe 2.3 du RP.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>precision reputee du sondeur.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>016 Nouvelle Caledonie - Noumea (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA TONCHIA IPA EVEN</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>37,505</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP-BHNC MOP Base Hydrographique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"POP - POPINEE vedette VH8"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>Z  Precision non specifiee</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>2</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>therier</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>1999-01-15</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>166.43194</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>166.437457</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-22.27739</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-22.26813</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Annule et remplace les levés antérieurs</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

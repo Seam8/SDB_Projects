@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence C</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S200002000-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20001124</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19990504</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19990504</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>neant.</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>3</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 062620.300</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-7.500" max_value="0.500" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="547.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200002000-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 134625.936</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>Ordre spécial</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19920910</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Leve de reconnaissance de plageage au sondeur vertical DESO 20.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Controle et reconnaissance de plageages en baie du Santal a Lifou.
+Doueoulou</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>NCR - Nouvelle Cal‚donie RGNC</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>les sondes sont reduites de la maree et corrigees de la celerite.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>version Geolib en vigueur</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir annexe A du RP.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>normes hydrographiques, voir rapport particulier</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>280 Loyautes - Lifou (ile) Doueoulou (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>Tonchia</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>548</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_WGS84 UTM58S_WGS 1984</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LPCV - LAPLACE (BHO) Vedettes"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>10</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>TRADOC</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>duigou</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>1999-05-04</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>167.0836956</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>167.0859703</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.9260744</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.9231797</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Complète les levés antérieurs</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

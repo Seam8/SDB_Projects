@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="OBJNAM">
+    <Value>S201003400-2</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20110210</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.4</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20100517</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20100503</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder","found by diver"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Oct 5, 2012 12:38:51 PM&#13;
+Bathymetry replaced by cgarnier</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160426 132751.481</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-36.200" max_value="-7.800" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="COD_CAPTEUR" default_elevation="false" hidden="false" category="2" direction="0" type="5" min_value="0.000" max_value="1.000" unit=""/&gt;&lt;band name="COD_PORTEUR" default_elevation="false" hidden="false" category="2" direction="0" type="5" min_value="0.000" max_value="1.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="839544.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s201003400-2.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 213757.826</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur monofaisceau Simrad EA400","Profondimètre"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>Non qualifiable en norme S44</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20100503</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Levé bathymétrique</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Levé hydrographique à Belep</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Marée observée à Uala.Le zéro de réduction des sondes est situé à 3,076 mètres au dessous du repère fondamental A.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir RAP2010-060</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Voir RAP2010-060</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>329 Nouvelle Caledonie - Beleps Hart (iles) Uala (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPETA Lannuzel</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>839,545</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>GOP Groupe Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LOUIS-HENIN - Baliseur polyvalent LOUIS HENIN (Nouvelle Calédonie)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>Z  Precision non specifiee</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>Voir RAP2010-060</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>clelann</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>2.3.X</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>163.6166446</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>163.7163757</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-19.9372292</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-19.7413306</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Non renseigné</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Annule et remplace certain levés (remplir caltxt)</Value>
+  </Attribute>
+  <Attribute name="caltxt">
+    <Value>levé de 1881</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence A2</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S200104500-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20030403</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19970822</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19970624</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>3 voies recommandees: - acces a la passe de Yande (seuil a 13 m) - de l'est de Baaba a la pointe Pouthier (seuil a 10 m) - de la pointe Pouthier au canal Devarenne (seuil a 8m). Les minutes associees B10-2, B10-5, B10-7, B10-13, B10-14, B10-45 et B10-50 completent les minutes 88-18-(02-05-07-08-13), 91-56-(8-13-15), 93-33-6 et 93-61-1. Les zones delimitees par des traits tiretes noirs completes par des fleches sont completement hydrographiees pour des seuils de navigation de 8, 10 et 13 m par une exploration au sondeur lateral. Les vedettes du BH2 Laplace ont également été utilisées.</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 064310.925</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-25.500" max_value="-10.000" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="7.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200104500-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 135944.874</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZCHSN  Zone complètement hydrographiée, avec seuil de navigation</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1(A) Code S44 petit fond 1 qualification SHOM A</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19970624</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Sondes validees et ecrites sur les minutes, plus courtes que celles des leves anterieurs et ne necessitant pas de recherche en raison de leurs caracteristiques.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Leve bathymetrique des voies recommandees du lagon nord.</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont corrigees de la celerite et des tirants d'eau et reduites de la maree observee a Pouebo (Mahamate)  et a Pandop (wharf). Le zero de reduction des sondes a Pouebo est situe a 5,027 m au-dessous du repere de nivellement SHOM "A", scelle horizontalement dans un poteau electrique en ciment  (39/A4) situe a l'embranchement de la piste d'acces a la plage de Mahamate. Le zero de reduction des sondes a Pandop est situe a 3,414 m au-dessous du repere de nivellement "D" type M situe cote nord-ouest du ponceau sur la route menant a Koumac (repere fondamental).</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>UTM58S_NCA--&gt; WGD</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir paragraphe 2.4.2 du rapport particulier</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Voir paragraphe 4.4.3 du rapport particulier</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>046 Nouvelle Caledonie - Thio</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>ICA Helene TONCHIA</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>8</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_NCA - UTM58S_Nouvelle-Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LPC LAPLACE (BHO)","LPCV - LAPLACE (BHO) Vedettes"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>100</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>HYTRAI</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>mlegall</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>1997-06-24</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>163.7676171</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>164.0932496</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.118374</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.08226</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Complète les levés antérieurs</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

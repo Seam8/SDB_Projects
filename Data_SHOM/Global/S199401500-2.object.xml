@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence C</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S199401500-2</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20101026</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19940202</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19940202</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>20101109 JDN : coherence minutes / BDBS effectuee. 20101109 JDN : le rapport ne mentionnant pas de code S44 ni de caracterisation, je les ai donc deduit avec accord chef DTI. &#13;
+20101109 JDN : lotissement du leve modifie en vue de la determination CATZOC.&#13;</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>0.5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20151201 095245.812</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-19.200" max_value="-7.100" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="206.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s199401500-2.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 130908.077</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZIH  Zone incomplètement hydrographiée</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>2 Code S44 petit fond 2</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19940202</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Securite nautique aux abords de Noumea</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Securite nautique aux abords de Noumea</Value>
+  </Attribute>
+  <Attribute name="fincom">
+    <Value>20101231</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>IGN72_NCA - Systeme Geodesique de Nouvelle - Caledonie - IGN72</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont reduites de la maree et corrigees de la celerite.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>Librairie Geolib.</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir R.P. para 3.1</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Voir R.P. para 3.3</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>016 Nouvelle Caledonie - Noumea (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPETA Dolou</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>207</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_WGS84 UTM58S_WGS 1984</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LPC LAPLACE (BHO)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>50</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>Neant.</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>AUTRE  Autre</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>djourdai</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>GEOLIB2.3.0</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>166.4644504</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>166.4663795</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-22.4836686</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-22.4812556</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence A2</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S200104300-2</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20030331</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>19980821</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>19960702</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by echo-sounder"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Le BH2 Laplace ainsi que sa coralline ont également été utilisés. La zone délimitée par des traits tiretés noir complétés par des flèches a été complètement explorée au sondeur latéral. Minutes associées B5-2 et B5-3.</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>5</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160523 063813.331</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-99.300" max_value="-15.700" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="3061.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s200104300-2.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["Geographic coordinate system",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150427 135928.530</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Sondeur DESO 20"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZCHSN  Zone complètement hydrographiée, avec seuil de navigation</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1(A) Code S44 petit fond 1 qualification SHOM A</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>19960702</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>neant.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Nouvelle-Caledonie - Du canal de Pouebo a la passe de Pouebo.</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>NCR - Nouvelle Cal‚donie RGNC</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont corrigees de la celerite et des tirants d'eau et reduites de la maree observee a Mahamate. Le zero de reduction des sondes est situe a 5,027 m au-dessous du repere de nivellement SHOM scelle horizontalement dans un poteau electrique en ciment (39/A4) situe a l'embranchement de la piste menant a la plage de Mahamate.</Value>
+  </Attribute>
+  <Attribute name="infpar">
+    <Value>UTM58S_WGS84 --&gt; WGD</Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir paragraphe 2.5 du rapport particulier.</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Voir paragraphe 4.3 du rapport particulier.</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>046 Nouvelle Caledonie - Thio</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IPA Helene TONCHIA</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>3,062</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>UTM58S_WGS84 UTM58S_WGS 1984</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>MOP Mission Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"LPCV - LAPLACE (BHO) Vedettes","LPCC - LAPLACE (BHO) Coralines","LPC LAPLACE (BHO)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>2  Sonde en provenance d'un leve systematique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>E  Precision meilleure que 2%</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>50</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>HYTRAI</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="typrof">
+    <Value>REG  Regulier</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>mlegall</Value>
+  </Attribute>
+  <Attribute name="vergeo">
+    <Value>1997-07-02</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>164.59419</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>164.6294497</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.3710344</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.3444021</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caleva">
+    <Value>Annule et remplace certain levés (remplir caltxt)</Value>
+  </Attribute>
+  <Attribute name="caltxt">
+    <Value>1865 et 1986</Value>
+  </Attribute>
+</BDB_Simple_Attributes>

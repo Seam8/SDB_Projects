@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BDB_Simple_Attributes>
+  <Attribute name="CATZOC">
+    <Value>zone of confidence A1</Value>
+  </Attribute>
+  <Attribute name="OBJNAM">
+    <Value>S201406300-1</Value>
+  </Attribute>
+  <Attribute name="RECDAT">
+    <Value>20140715</Value>
+  </Attribute>
+  <Attribute name="SOUACC">
+    <Value>0.3</Value>
+  </Attribute>
+  <Attribute name="SUREND">
+    <Value>20140402</Value>
+  </Attribute>
+  <Attribute name="SURSTA">
+    <Value>20140331</Value>
+  </Attribute>
+  <Attribute name="TECSOU">
+    <Value>"found by diver"</Value>
+  </Attribute>
+  <Attribute name="NINFOM">
+    <Value>Recherches plongeurs. ZHAETF dans l'emprise des recherches, et complétant le levé S201106700 de sorte à ce que le lot 1 de ce lot puisse être considéré ZHAETF : voir RP.</Value>
+  </Attribute>
+  <Attribute name="POSACC">
+    <Value>2</Value>
+  </Attribute>
+  <Attribute name="modtim">
+    <Value>20160324 151712.434</Value>
+  </Attribute>
+  <Attribute name="srfcat">
+    <Value>Standard</Value>
+  </Attribute>
+  <Attribute name="idprnt">
+    <Value>7,000,000</Value>
+  </Attribute>
+  <Attribute name="srfdsc">
+    <Value>&lt;?xml version="1.0"?&gt;
+&lt;Bathy_Surface_Descriptor&gt;&lt;band name="Depth" default_elevation="true" hidden="false" category="0" direction="3" type="0" min_value="-6.400" max_value="-2.900" unit="m"/&gt;&lt;band name="Status" default_elevation="false" hidden="false" category="0" direction="0" type="7" min_value="0.000" max_value="0.000" unit=""/&gt;&lt;band name="Index" default_elevation="false" hidden="false" category="0" direction="0" type="9" min_value="0.000" max_value="2.000" unit=""/&gt;&lt;/Bathy_Surface_Descriptor&gt;
+</Value>
+  </Attribute>
+  <Attribute name="srcfil">
+    <Value>s201406300-1.csar</Value>
+  </Attribute>
+  <Attribute name="hcosys">
+    <Value>GEOGCS["WG84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.2572201434276],
+        TOWGS84[0,0,0,0,0,0,0]],
+    PRIMEM["Greenwich",0],
+    UNIT["degree",0.0174532925199433],
+    EXTENSION["Scaler","0,0,0,0.0000001,0.0000001,0.0001"],
+    EXTENSION["Source","CARIS"]]</Value>
+  </Attribute>
+  <Attribute name="cretim">
+    <Value>20150428 013335.356</Value>
+  </Attribute>
+  <Attribute name="srftyp">
+    <Value>CSAR Point Cloud (.csar)</Value>
+  </Attribute>
+  <Attribute name="uidcre">
+    <Value>DBA</Value>
+  </Attribute>
+  <Attribute name="captur">
+    <Value>"Profondimètre"</Value>
+  </Attribute>
+  <Attribute name="carhyd">
+    <Value>ZHAETF Zone hydrographiée avec exploration totale du fond</Value>
+  </Attribute>
+  <Attribute name="cods44">
+    <Value>1a Code S44 5ème édition</Value>
+  </Attribute>
+  <Attribute name="codval">
+    <Value>VALID  Valide</Value>
+  </Attribute>
+  <Attribute name="corver">
+    <Value>1000000000</Value>
+  </Attribute>
+  <Attribute name="datnrv">
+    <Value>20140331</Value>
+  </Attribute>
+  <Attribute name="descrp">
+    <Value>Sondes issues de recherches par plongeurs. Voir RAP2014-109.</Value>
+  </Attribute>
+  <Attribute name="design">
+    <Value>Compléments au levé S201106700  accès au port de Wé</Value>
+  </Attribute>
+  <Attribute name="geocou">
+    <Value>WGS84</Value>
+  </Attribute>
+  <Attribute name="geoori">
+    <Value>RGNC - Reseau Geodesique de Nouvelle Caledonie</Value>
+  </Attribute>
+  <Attribute name="infcor">
+    <Value>Les sondes sont réduites de la marée observée à Wé. Le zéro hydrographique est situé à 5,223 m au-dessous du repère fondamental O de la FOM (fiche DITTT LF-000  cote 4,228 m au dessus du zéro du NGNC).  </Value>
+  </Attribute>
+  <Attribute name="meth_p">
+    <Value>Voir para 7.1 du RP</Value>
+  </Attribute>
+  <Attribute name="meth_z">
+    <Value>Voir para 7.2.5 du RP</Value>
+  </Attribute>
+  <Attribute name="nomnrv">
+    <Value>109 Loyautes - Lifou We (ZH)</Value>
+  </Attribute>
+  <Attribute name="nomres">
+    <Value>IC2ETA Michaux</Value>
+  </Attribute>
+  <Attribute name="numson">
+    <Value>3</Value>
+  </Attribute>
+  <Attribute name="prjori">
+    <Value>GEO - GEOGRAPHIQUE</Value>
+  </Attribute>
+  <Attribute name="procom">
+    <Value>DL  Diffusion libre</Value>
+  </Attribute>
+  <Attribute name="prodrs">
+    <Value>GOP Groupe Oceanographique du Pacifique</Value>
+  </Attribute>
+  <Attribute name="promil">
+    <Value>NP  Non protégé</Value>
+  </Attribute>
+  <Attribute name="propri">
+    <Value>SHOM Service Hydrographique et Oceanographique de la Marine</Value>
+  </Attribute>
+  <Attribute name="prteur">
+    <Value>"CHAMBEYRON - Vedette hydrographique CHAMBEYRON (Nouvelle Calédonie)"</Value>
+  </Attribute>
+  <Attribute name="ps4uni">
+    <Value>1  Sonde en provenance d'un profil unique</Value>
+  </Attribute>
+  <Attribute name="qualot">
+    <Value>Z  Precision non specifiee</Value>
+  </Attribute>
+  <Attribute name="reslot">
+    <Value>1</Value>
+  </Attribute>
+  <Attribute name="tramnt">
+    <Value>Hypack 2013</Value>
+  </Attribute>
+  <Attribute name="typlot">
+    <Value>0 Lot de sondes</Value>
+  </Attribute>
+  <Attribute name="usrval">
+    <Value>MICHAUX</Value>
+  </Attribute>
+  <Attribute name="lonmin">
+    <Value>167.2777778</Value>
+  </Attribute>
+  <Attribute name="lonmax">
+    <Value>167.2789659</Value>
+  </Attribute>
+  <Attribute name="latmin">
+    <Value>-20.9177528</Value>
+  </Attribute>
+  <Attribute name="latmax">
+    <Value>-20.9166176</Value>
+  </Attribute>
+  <Attribute name="fiazoc">
+    <Value>Renseigné manuellement</Value>
+  </Attribute>
+  <Attribute name="caltxt">
+    <Value>Voir rapport</Value>
+  </Attribute>
+</BDB_Simple_Attributes>
