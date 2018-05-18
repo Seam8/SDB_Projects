@@ -153,7 +153,7 @@ def GetSurvey_byDepthFP(XML_List, RePath_xmlDirectory, E_range, N_range, max_Dep
             DepthPt = pd.read_csv(RePath_xmlDirectory+'/'+xml[:-10]+'ascii', delim_whitespace=True, header=None, names=['Lat','Lon','Depth'])
             # filter by depth
             DepthPt_40m = DepthPt[DepthPt['Depth']<=max_Depth]
-            DepthPt_40m = DepthPt_40m[0<DepthPt_40m['Depth']]
+            #DepthPt_40m = DepthPt_40m[0<DepthPt_40m['Depth']]
             # loads points
             current_pt =  DepthPt_40m[['Lon','Lat']].values
             current_depth =  DepthPt_40m['Depth'].values
