@@ -1,0 +1,3 @@
+"GPS Latitude","GPS Longitude"
+-22.280532,166.46660191
+
