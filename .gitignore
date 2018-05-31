@@ -1,0 +1,16 @@
+*.tif
+*.nc
+*.jp2
+*.zip
+*.SAFE/
+*Images/
+*.shp
+*.prj
+*.qpj
+*.shx
+*.dbf
+*.npz
+*.ascii
+*.JPG
+*.RAW
+*.kmz
