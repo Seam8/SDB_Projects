@@ -1,0 +1,2 @@
+[%
+CONCAT('<img src="D:/SDB/Poe/Terrain/Echantillonage_Fonds/PhotosClassees/NewSize',name, '.JPG', '" ></img>')%]
