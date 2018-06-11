@@ -1,0 +1,64 @@
+{
+   "dataheader":[
+      {
+         "name":"Time",
+         "format":"yyyy-MM-dd HH:mm:ss.SSS",
+         "index":1
+      },
+      {
+         "name":"Temperature",
+         "index":2,
+         "units":"Degrees_C"
+      },
+      {
+         "name":"Pressure",
+         "index":3,
+         "units":"dbar"
+      },
+      {
+         "name":"Sea pressure",
+         "index":4,
+         "units":"deciBars"
+      },
+      {
+         "name":"Depth",
+         "index":5,
+         "units":"m"
+      }
+   ],
+   "schedule":{
+      "loggertime":"2018-06-11 03:39:30.841",
+      "endtime":"2018-05-24 01:00:00.000",
+      "starttime":"2018-05-21 01:00:00.000"
+   },
+   "sampling":{
+      "mode":"CONTINUOUS",
+      "period":"1000"
+   },
+   "comment":"",
+   "instrument":{
+      "fwversion":12.02,
+      "serial":51800,
+      "model":"RBRduo",
+      "fwtype":100
+   },
+   "version":{
+      "file":"1.0.0",
+      "ruskin":"1.13.13"
+   },
+   "export":{
+      "exporttime":"2018-06-11 03:40:39.978",
+      "endtime":"2018-05-24 01:00:00.000",
+      "starttime":"2018-05-21 01:00:00.000"
+   },
+   "parameters":{
+      "altitude":0,
+      "salinity":35,
+      "spec_cond_coeff":0.0191,
+      "density":1.0281,
+      "conductivity":42.914,
+      "temperature":15,
+      "pressure":10.1325,
+      "atmpressure":10.1325
+   }
+}
