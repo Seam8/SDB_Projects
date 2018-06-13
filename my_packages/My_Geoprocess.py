@@ -7,6 +7,9 @@ from osgeo import gdal
 from sklearn.metrics import r2_score
 import xml.etree.ElementTree as ET
 import pandas as pd
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 
 ##########################################################################
 # Files paths definition
@@ -550,4 +553,47 @@ def output_multipolygone_from_raster_layer(Classif,raster_NoDataValue,classes,cl
     ogr_datasource  = None
     out_datasource  = None
     print(20*'=')
+    return
+ 
+##########################################################################
+# Stats
+    
+def plot_ResRegPlots(X, y, plotsPerRows=3, Scale=False, SetTitles= False, Titles=None):
+    '''Plot each residual regression plot of a descriptor matrix X~[n_samples, n_descriptors] with a target array y~[n_samples]'''
+    
+    fig , axes = plt.subplots(int(np.ceil(X.shape[1]/plotsPerRows)),plotsPerRows, figsize=(15,15))
+    for i, ax in enumerate(fig.axes):
+        if i >= X.shape[1]:
+            ax.set_visible(False)
+            continue
+
+        lr = LinearRegression(fit_intercept=True)
+        index = np.arange(X.shape[1])!=i
+        X_others = X[:,index]
+        x = X[:,~index]
+
+        ResY_others = y - lr.fit(X_others, y).predict(X_others)
+        ResX_others = x - lr.fit(X_others, x).predict(X_others)
+        
+        if Scale:
+            ResY_others = (ResY_others - np.mean(ResY_others))/np.std(ResY_others)
+            ResX_others = (ResX_others - np.mean(ResX_others))/np.std(ResX_others)
+            
+        lr.fit(ResX_others, ResY_others)
+        
+        plotIndex = np.array([np.argmin(ResX_others), np.argmax(ResX_others)])  
+        if SetTitles :
+            BandStr = Titles[i]
+        else:
+            BandStr = 'Band : '+str(i)
+
+            ax.scatter(ResX_others, ResY_others)
+        ax.plot(ResX_others[plotIndex,:], lr.predict(ResX_others[plotIndex,:]))
+        ax.set_title(BandStr + ', Coefficient: ' + str(lr.coef_))
+        ax.set_ylabel('Res(y ~ Xs)')
+        ax.set_xlabel('Res(x ~ Xs)')
+    
+    
+    
+    
     
