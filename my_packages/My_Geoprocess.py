@@ -10,6 +10,9 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
+from shapely import geometry as geom
+from scipy.interpolate import griddata
+
 
 ##########################################################################
 # Files paths definition
@@ -592,8 +595,67 @@ def plot_ResRegPlots(X, y, plotsPerRows=3, Scale=False, SetTitles= False, Titles
         ax.set_title(BandStr + ', Coefficient: ' + str(lr.coef_))
         ax.set_ylabel('Res(y ~ Xs)')
         ax.set_xlabel('Res(x ~ Xs)')
+    return
+
+def get_OccupiedRatio(x,y,radius=0.1):
+    '''compute fraction of area in pixel, covered by in situ measurements localised at pixel coordinate x,y'''
+
+    for i, (cx, cy) in enumerate(zip(x,y)): 
+        if i == 0:
+            occupied = geom.Point(cx,cy).buffer(radius)
+            continue
+        occupied = occupied.union(geom.Point(cx,cy).buffer(radius))
+
+    assert occupied.is_valid
+
+    pixel = geom.Polygon(((int(x[0]),int(y[0])),
+                          (int(x[0])+1,int(y[0])),
+                          (int(x[0])+1,int(y[0])+1),
+                          (int(x[0]),int(y[0]+1))
+                         ))
+    assert pixel.is_valid
+    occupied = occupied.intersection(pixel)
+    assert occupied.is_valid
+    ratio = occupied.area/pixel.area
+    return ratio, occupied
+
     
+def InterpPixDepth(Points, Depth, delta=0.01, PlotArg=True, modes=['nearest', 'linear', 'cubic']):
+    '''Interpolate Depth mesured in the pixel at the position defined by
+    the array Points (nx2 with col1=rows(py), col2=cols(px), with an 
+    interval of delta(pixel unit), with the mode defined by modes(liste
+    containing one or several argument: 'nearest', 'linear', 'cubi'). 
     
+    Return the average interpolated depth in the pixel.
     
+    If PlotArg=True, result is plotted'''
     
+    gridy = np.arange(int(Points[0,0])+delta, int(Points[0,0])+1,delta)
+    gridx = np.arange(int(Points[0,1])+delta, int(Points[0,1])+1,delta)
+    xx, yy = np.meshgrid(gridx, gridy)
     
+    InterpMean = []
+    for mode in modes:
+        Z=griddata(Points, np.asarray(Depth), (xx, yy), method=mode)
+        if PlotArg:
+            fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(15,7.5))
+            ax[0].contourf(xx, yy, Z,cmap='seismic')
+            ax[0].scatter(Points[:,0], Points[:,1], c=Depth,cmap='seismic',edgecolor=(0,0,0))
+            ax[0].invert_yaxis()
+            ax[0].set_title('CONTOUR methode: ' +
+                            str(mode) +
+                            ', pixel at row: ' +
+                            str(int(Points[0,0])) +
+                            ' col:' +
+                            str(int(Points[0,1])))
+            ax[1].scatter(xx, yy, c=Z,cmap='seismic')
+            ax[1].scatter(Points[:,0], Points[:,1], c=Depth,cmap='seismic',edgecolor=(0,0,0))
+            ax[1].invert_yaxis()
+            ax[1].set_title('Scatter methode: ' +
+                str(mode) +
+                ', pixel at row: ' +
+                str(int(Points[0,0])) +
+                ' col:' +
+                str(int(Points[0,1])))
+        InterpMean.append(np.nanmean(Z))
+    return InterpMean     
