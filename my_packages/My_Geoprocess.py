@@ -562,9 +562,12 @@ def output_multipolygone_from_raster_layer(Classif,raster_NoDataValue,classes,cl
 # Stats
     
 def plot_ResRegPlots(X, y, plotsPerRows=3, Scale=False, SetTitles= False, Titles=None):
-    '''Plot each residual regression plot of a descriptor matrix X~[n_samples, n_descriptors] with a target array y~[n_samples]'''
+    '''Plot each residual regression plot of a descriptor matrix X~[n_samples, n_descriptors]
+    with a target array y~[n_samples]'''
     
     fig , axes = plt.subplots(int(np.ceil(X.shape[1]/plotsPerRows)),plotsPerRows, figsize=(15,15))
+    fig.suptitle('Residual regression plots')
+    fig.subplots_adjust(hspace=.5, top=.9)
     for i, ax in enumerate(fig.axes):
         if i >= X.shape[1]:
             ax.set_visible(False)
@@ -590,7 +593,7 @@ def plot_ResRegPlots(X, y, plotsPerRows=3, Scale=False, SetTitles= False, Titles
         else:
             BandStr = 'Band : '+str(i)
 
-            ax.scatter(ResX_others, ResY_others)
+        ax.scatter(ResX_others, ResY_others)
         ax.plot(ResX_others[plotIndex,:], lr.predict(ResX_others[plotIndex,:]))
         ax.set_title(BandStr + ', Coefficient: ' + str(lr.coef_))
         ax.set_ylabel('Res(y ~ Xs)')
@@ -659,3 +662,49 @@ def InterpPixDepth(Points, Depth, delta=0.01, PlotArg=True, modes=['nearest', 'l
                 str(int(Points[0,1])))
         InterpMean.append(np.nanmean(Z))
     return InterpMean     
+
+def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=True):
+    '''Perform LeaveOneOut cross validation on target array y(nx1) 
+    with the nd descriptors contained in matrix x(nxnd) using the 
+    classmodel lr(which must have a .fit() and .predict method).
+    
+    Plot the result. if ax, plot is made in ax system axe. 
+    If SetTitles=True, Titles is used as title for plot'''
+    from sklearn.model_selection import LeaveOneOut
+    
+    loo = LeaveOneOut()
+    loo.get_n_splits(x)
+    predicted = np.full(y.shape,np.nan, np.float)
+    #lr = linear_model.LinearRegression()
+    counterCheck = 0
+
+    for train_index, test_index in loo.split(x):
+        lr.fit(x[train_index], y[train_index])
+        predicted[test_index] = lr.predict(x[test_index])
+        counterCheck = counterCheck + 1
+    assert counterCheck == len(y)
+    
+    Stat = {}
+    Stat['R2_score'] = r2_score(y, predicted)
+    Stat['RMS'] = np.mean((y - predicted)**2)
+    Stat['RMaxS'] = np.max((y - predicted)**2)
+    Stat['RMinS'] = np.min((y - predicted)**2)
+    Stat['RMedS'] = np.median((y - predicted)**2)
+    
+    lr.fit(x, y)
+    Stat['Coefs'] = lr.coef_ 
+    Stat['Intercept'] = lr.intercept_  
+
+    if DoPlot:
+        if ax==None:
+            fig, ax = plt.subplots()
+        im = ax.scatter(y, predicted, edgecolors=(0, 0, 0))
+        ax.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=4)
+        ax.set_xlabel('Measured')
+        ax.set_ylabel('Predicted')
+        plotTitle = 'R2 : {0:0.3f}, RMS : {1:0.2f}m'.format(Stat['R2_score'], Stat['RMS'])
+        if SetTitles:
+            plotTitle = Titles+'\n'+plotTitle
+        ax.set_title(plotTitle)
+    
+    return predicted, Stat
