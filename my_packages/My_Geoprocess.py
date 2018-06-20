@@ -694,6 +694,7 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
     lr.fit(x, y)
     Stat['Coefs'] = lr.coef_ 
     Stat['Intercept'] = lr.intercept_  
+    Stat['Model'] = lr
 
     if DoPlot:
         if ax==None:
@@ -702,9 +703,40 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
         ax.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=4)
         ax.set_xlabel('Measured')
         ax.set_ylabel('Predicted')
-        plotTitle = 'R2 : {0:0.3f}, RMS : {1:0.2f}m'.format(Stat['R2_score'], Stat['RMS'])
+        plotTitle = 'R2 : {0:0.3f}, RMS : {1:0.3f}m'.format(Stat['R2_score'], Stat['RMS'])
         if SetTitles:
             plotTitle = Titles+'\n'+plotTitle
         ax.set_title(plotTitle)
     
     return predicted, Stat
+
+def getScene(xlabel, ylabel, zlabel, xtick, ytick):
+    scene = dict(
+                xaxis = dict(
+                    ticktext= ['exp({0:1.0f})'.format(np.log10(a)) for a in xtick],
+                    tickvals= [i for i in range(len(xtick))],
+                    title=xlabel,
+                    gridcolor='rgb(255, 255, 255)',
+                    zerolinecolor='rgb(255, 255, 255)',
+                    showbackground=True,
+                    backgroundcolor='rgb(230, 230,230)'
+                ),
+                yaxis = dict(
+                    ticktext= ['{0:.2f}'.format(e) for e in ytick],
+                    tickvals= [i for i in range(len(ytick))],
+                    title=ylabel,
+                    gridcolor='rgb(255, 255, 255)',
+                    zerolinecolor='rgb(255, 255, 255)',
+                    showbackground=True,
+                    backgroundcolor='rgb(230, 230,230)'
+                ),
+                zaxis = dict(
+                    title=zlabel,
+                    gridcolor='rgb(255, 255, 255)',
+                    zerolinecolor='rgb(255, 255, 255)',
+                    showbackground=True,
+                    backgroundcolor='rgb(230, 230,230)'
+                ),
+            )
+    
+    return scene
