@@ -302,7 +302,7 @@ def write_raster(fname, data, geo_transform, projection, DriverName='GTiff'):
     
 
     
-def write_raster2(fname, data, geo_transform, projection, DriverName="GTiff", formatMem=gdal.GDT_UInt16, Offset=None ):
+def write_raster2(fname, data, geo_transform, projection, DriverName="GTiff", formatMem=gdal.GDT_UInt16, Metadata=None, Offset=None ):
     """Create a GeoTIFF file with the given data."""
     
     driver = gdal.GetDriverByName(DriverName)
@@ -321,6 +321,10 @@ def write_raster2(fname, data, geo_transform, projection, DriverName="GTiff", fo
 
     dataset.SetGeoTransform(geo_transform)
     dataset.SetProjection(projection)
+    
+    if not Metadata==None:
+        dataset.SetMetadata(Metadata)
+        
     if NBands > 1:
         for b in range(NBands): 
             band = dataset.GetRasterBand(b+1)
@@ -740,3 +744,23 @@ def getScene(xlabel, ylabel, zlabel, xtick, ytick):
             )
     
     return scene
+
+def GetInnerInterp(Deviance, ind, methode="nearest"):
+    '''Compute a regular inner interpolation of the value Deviance (n,) 
+    set in the the boolean grid ind. Only the cells lying in-between 
+    interpolated points are computed. Return a grid with the resulting 
+    values and grid'''
+    
+    from skimage.morphology import convex_hull_image
+    from scipy.interpolate import griddata
+    
+    Ex, Ey = np.where(ind) 
+    FullInd = convex_hull_image(ind)
+    xx, yy = np.where(FullInd)
+
+    Z=griddata(np.stack((Ex,Ey),axis=1), Deviance, (xx, yy), method='nearest')
+    DeviationMap = np.full(ind.shape, np.nan)
+    DeviationMap[FullInd] = Z
+    DeviationMap[ind] = Deviance
+    return DeviationMap
+
