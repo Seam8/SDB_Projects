@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from shapely import geometry as geom
 from scipy.interpolate import griddata
+from skimage import exposure
 
 
 ##########################################################################
@@ -637,8 +638,8 @@ def InterpPixDepth(Points, Depth, delta=0.01, PlotArg=True, modes=['nearest', 'l
     
     If PlotArg=True, result is plotted'''
     
-    gridy = np.arange(int(Points[0,0])+delta, int(Points[0,0])+1,delta)
-    gridx = np.arange(int(Points[0,1])+delta, int(Points[0,1])+1,delta)
+    gridx = np.arange(int(Points[0,0])+delta, int(Points[0,0])+1,delta)
+    gridy = np.arange(int(Points[0,1])+delta, int(Points[0,1])+1,delta)
     xx, yy = np.meshgrid(gridx, gridy)
     
     InterpMean = []
@@ -698,6 +699,14 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
     lr.fit(x, y)
     Stat['Coefs'] = lr.coef_ 
     Stat['Intercept'] = lr.intercept_  
+    
+    trained_predict = lr.predict(x)
+    Stat['tr_R2_score'] = r2_score(y, trained_predict)
+    Stat['tr_RMS'] = np.mean((y - trained_predict)**2)
+    Stat['tr_RMaxS'] = np.max((y - trained_predict)**2)
+    Stat['tr_RMinS'] = np.min((y - trained_predict)**2)
+    Stat['tr_RMedS'] = np.median((y - trained_predict)**2)
+    
     Stat['Model'] = lr
 
     if DoPlot:
@@ -764,3 +773,18 @@ def GetInnerInterp(Deviance, ind, methode="nearest"):
     DeviationMap[ind] = Deviance
     return DeviationMap
 
+def GetSparseCrop(fname, RastDim,xof, yof , win_xs , win_ys):
+
+    CropRast = gdal.Open(fname, gdal.GA_ReadOnly)
+    CropBand = CropRast.GetRasterBand(1)
+    CropArr = CropBand.ReadAsArray(xoff=xof, yoff=yof, win_xsize=win_xs, win_ysize=win_ys)
+    Rast = np.full(RastDim, 0, dtype=CropArr.dtype)
+    Rast[int(yof): int(yof+win_ys), int(xof): int(xof+win_xs)] = CropArr
+    return Rast
+
+def RescalImg(img, bornes):
+    img_rescale = np.full(img.shape, np.nan, dtype=img.dtype)
+    for i in range(img.shape[2]):
+        p2, p98 = np.percentile(img[:,:,i], (bornes[0], bornes[1]))
+        img_rescale[:,:,i] = exposure.rescale_intensity(img[:,:,i], in_range=(p2, p98))
+    return img_rescale
