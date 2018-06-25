@@ -788,3 +788,50 @@ def RescalImg(img, bornes):
         p2, p98 = np.percentile(img[:,:,i], (bornes[0], bornes[1]))
         img_rescale[:,:,i] = exposure.rescale_intensity(img[:,:,i], in_range=(p2, p98))
     return img_rescale
+
+
+def GetIndex(y, Thresholds):
+    sub_s = -np.inf
+    Indexs = []
+    for s in Thresholds:
+        Indexs.append(np.where(np.logical_and(y<=s, y>sub_s)))
+        sub_s = s
+    np.sum([len(ind[0]) for ind in Indexs])==len(y)
+    return Indexs
+
+##########################################################################
+# Stats
+
+class my_2IterationsModel():
+    '''Allows to fit and predicts model with to different steps.'''
+    def __init__(self, Model, Thresholds, ModelsArguments={}):
+        Thresholds.append(np.inf)
+        self.Thres = Thresholds
+        self.Models_ = [Model(**ModelsArguments) for s in self.Thres]
+        self.GlobModel = Model(**ModelsArguments)
+        self.y_First = np.float()
+        
+    def __repr__(self):
+        return "2Iters_"+str(self.GlobModel)
+
+        
+    def fit(self,x, y):
+        self.GlobModel.fit(x,y)
+
+        Indexs = GetIndex(y, self.Thres)   
+        for i, ind in enumerate(Indexs):
+            if len(x[ind])!=0:
+                self.Models_[i].fit(x[ind], y[ind])
+                
+        self.coef_ = [m.coef_ for m in self.Models_]
+        self.intercept_ = [m.intercept_ for m in self.Models_]
+            
+    def predict(self, x):
+        self.y_First = self.GlobModel.predict(x)
+        predicted = np.full(self.y_First.shape, np.nan)
+        Indexs = GetIndex(self.y_First, self.Thres)  
+        
+        for i, ind in enumerate(Indexs):
+            if len(x[ind])!=0:
+                predicted[ind] = self.Models_[i].predict(x[ind])
+        return predicted
