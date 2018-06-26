@@ -812,7 +812,7 @@ class my_2IterationsModel():
         self.y_First = np.float()
         
     def __repr__(self):
-        return "2Iters_"+str(self.GlobModel)
+        return "2Iters"+str(self.GlobModel)
 
         
     def fit(self,x, y):
