@@ -668,16 +668,20 @@ def InterpPixDepth(Points, Depth, delta=0.01, PlotArg=True, modes=['nearest', 'l
         InterpMean.append(np.nanmean(Z))
     return InterpMean     
 
-def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=True):
+def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=True, spliting=None, ArgSplit=None):
     '''Perform LeaveOneOut cross validation on target array y(nx1) 
     with the nd descriptors contained in matrix x(nxnd) using the 
     classmodel lr(which must have a .fit() and .predict method).
     
     Plot the result. if ax, plot is made in ax system axe. 
     If SetTitles=True, Titles is used as title for plot'''
-    from sklearn.model_selection import LeaveOneOut
     
-    loo = LeaveOneOut()
+    if spliting == None:
+        from sklearn.model_selection import LeaveOneOut
+        loo = LeaveOneOut()
+    else: 
+        loo = spliting(**ArgSplit)
+        
     loo.get_n_splits(x)
     predicted = np.full(y.shape,np.nan, np.float)
     #lr = linear_model.LinearRegression()
@@ -687,7 +691,8 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
         lr.fit(x[train_index], y[train_index])
         predicted[test_index] = lr.predict(x[test_index])
         counterCheck = counterCheck + 1
-    assert counterCheck == len(y)
+    if spliting==None:    
+        assert counterCheck == len(y)
     
     Stat = {}
     Stat['R2_score'] = r2_score(y, predicted)
@@ -835,3 +840,92 @@ class my_2IterationsModel():
             if len(x[ind])!=0:
                 predicted[ind] = self.Models_[i].predict(x[ind])
         return predicted
+
+##########################################################################
+# Homogeneity Map
+def multiple_4d_linregress(x, y):
+    x_mean = np.mean(x, axis=(2,3), keepdims=True)
+    x_norm = x - x_mean
+    y_mean = np.mean(y, axis=(2,3), keepdims=True)
+    y_norm = y - y_mean
+
+    slope = (np.einsum('ijkl,ijkl->ij', x_norm, y_norm) /
+             np.einsum('ijkl,ijkl->ij', x_norm, x_norm))
+    del x_norm
+    intercept = y_mean[:, :,0,0] - slope * x_mean[:, :,0,0]
+    del x_mean
+    y_pred_norm = (slope[:,:, np.newaxis, np.newaxis] * x + intercept[:,:, np.newaxis, np.newaxis]) - y_mean
+    R2 = (np.einsum('ijkl,ijkl->ij', y_pred_norm, y_pred_norm) /
+          np.einsum('ijkl,ijkl->ij', y_norm, y_norm))
+    
+    return R2, slope, intercept
+
+def GetWindows(x, windSh):
+    from numpy.lib.stride_tricks import as_strided
+    
+    xSt = x.strides
+    xSh = x.shape
+    return as_strided(x,
+                      strides=(xSt[0], xSt[1], xSt[0], xSt[1] ),
+                      shape=(xSh[0]-windSh[0]+1,xSh[1]-windSh[1]+1, 3, 3))
+
+def my_OverlappingBlocks(x, y,width, heigth, winsize):
+    
+    assert x.shape == y.shape
+    w, h = x.shape
+    woverlape, hoverlape = winsize[0]-1, winsize[1]-1
+    wshift, hshift = int(woverlape/2), int(hoverlape/2)
+    
+    i, j = 0, 0
+    while i+width < w: # iterate over rows
+        while j+width < h: # iterate over column
+            Si, Sj = slice(i,i+width), slice(j,j+heigth)
+            Sio, Sjo = slice(i+wshift,i+width-wshift), slice(j+hshift,j+heigth-hshift)
+            yield Sio, Sjo, x[Si, Sj], y[Si, Sj]
+
+            j= j+heigth-hoverlape # actualize colum index 
+
+        if j < h: # handle last columns
+            Si, Sj = slice(i,i+width), slice(j,None)
+            Sio, Sjo = slice(i+wshift,i+width-wshift), slice(j+hshift,-hshift)
+            yield Sio, Sjo, x[Si, Sj], y[Si, Sj]
+        i= i+width-woverlape # actualize row index
+        j=0 # re-initialize column index
+        
+    if i  < w:  # handle last row
+        while j+width < h:
+            Si, Sj = slice(i,None), slice(j,j+heigth)
+            Sio, Sjo = slice(i+wshift,-wshift), slice(j+hshift,j+heigth-hshift)
+            yield Sio, Sjo, x[Si, Sj], y[Si, Sj]
+            j= j+heigth-hoverlape
+
+        if j < h: # handle last row, last line
+            Si, Sj = slice(i,None), slice(j,None)
+            Sio, Sjo = slice(i+wshift,-wshift), slice(j+hshift,-hshift)
+            yield Sio, Sjo, x[Si, Sj], y[Si, Sj]
+            
+def GetNeighboorRegress(x, y, blockSize, winSize, verbose=False):
+    r2 = np.full(x.shape, np.nan)
+    s = np.full(x.shape, np.nan)
+    it = np.full(x.shape, np.nan)
+
+    my_iterator = my_OverlappingBlocks(x,y,
+                                       width=blockSize[0], 
+                                       heigth=blockSize[1], 
+                                       winsize=winSize)
+    if verbose:
+        count = 0
+        for Si, Sj, xx, yy in my_iterator:
+            
+            r2[Si, Sj], s[Si, Sj], it[Si, Sj] = multiple_4d_linregress(GetWindows(xx, winSize), 
+                                                                       GetWindows(yy, winSize))
+            count = count +1
+            print('Block: {4:d}, at location : [{0:d}:{1:d}] x [{2:d}:{3:d}]'.format(Si.start, Si.stop,
+                                                                                     Sj.start, Sj.stop,
+                                                                                    count))
+    else:
+        for Si, Sj, xx, yy in iterator_test:
+            r2[Si, Sj], s[Si, Sj], it[Si, Sj] = multiple_4d_linregress(GetWindows(xx, winSize), 
+                                                                       GetWindows(yy, winSize))
+        
+    return r2, s, it
