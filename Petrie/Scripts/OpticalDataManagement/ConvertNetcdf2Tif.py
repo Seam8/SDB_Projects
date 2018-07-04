@@ -32,30 +32,27 @@ def getNCGeoTrans2(file, LonS, LatS ):
     Gt = np.linalg.solve(np.dot(A.T,A), np.dot(A.T,C))
     return (Gt[0], Gt[1], Gt[2], Gt[3], Gt[4], Gt[5])
 
+# ___________________________________________________________________________
 # location to the inputfile
-filePath = "D:/Image/Poe/Acolyte/S2B_MSIL1C_20180320T230859last/"
+filePath = "D:/SDB/Petrie/Images/Acolite/S2A_MSIL1C_20170929T231851_N0205_R001_T58KDE_20170929T231932"
 NetCdfFilename = getNcPath(filePath)
 FileLocation = filePath+NetCdfFilename[0]
-'''if os.path.exists(FileLocation[:-3]):
+
+# Create new repertory
+if os.path.exists(FileLocation[:-3]):
 	if os.path.exists(FileLocation[:-3]+'_bis'):
 		os.mkdir(FileLocation[:-3]+'_bis_bis')
 	else:
 		os.mkdir(FileLocation[:-3]+'_bis')
 else:
-	os.mkdir(FileLocation[:-3])'''
+	os.mkdir(FileLocation[:-3])
 
 # open the file
 dat = gdal.Open(FileLocation, gdal.GA_ReadOnly)
 if dat == None:
 	print('oups')
- 
-# Get the Precipitation dataset
 dataset = dat.GetSubDatasets()[6]
-
-# read the precipitation dataset
 data = gdal.Open(dataset[0],gdal.GA_ReadOnly)
- 
-# get the data of the precipitation dataset
 dataBand = data.ReadAsArray()
  
 # get geotransform

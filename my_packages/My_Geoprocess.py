@@ -405,6 +405,7 @@ def create_mask_from_vector(vector_data_path, cols, rows, geo_transform,
                             projection, target_value=1, format=gdal.GDT_UInt16):
     """Rasterize the given vector (wrapper for gdal.RasterizeLayer)."""
     data_source = gdal.OpenEx(vector_data_path, gdal.OF_VECTOR)
+    assert data_source.GetLayerCount() > 0
     layer = data_source.GetLayer(0)
     driver = gdal.GetDriverByName('MEM')  # In memory dataset
     target_ds = driver.Create('', cols, rows, 1, gdal.GDT_UInt16)
