@@ -4,7 +4,7 @@ import fnmatch
 import numpy as np
 from osgeo import osr
 from osgeo import gdal
-from sklearn.metrics import r2_score
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 import xml.etree.ElementTree as ET
 import pandas as pd
 import matplotlib as mpl
@@ -697,10 +697,12 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
     
     Stat = {}
     Stat['R2_score'] = r2_score(y, predicted)
-    Stat['RMS'] = np.mean((y - predicted)**2)
-    Stat['RMaxS'] = np.max((y - predicted)**2)
-    Stat['RMinS'] = np.min((y - predicted)**2)
-    Stat['RMedS'] = np.median((y - predicted)**2)
+    Stat['RMSE'] = np.sqrt(np.mean((y - predicted)**2))
+    Stat['RMaxSE'] = np.sqrt(np.max((y - predicted)**2))
+    Stat['RMinSE'] = np.sqrt(np.min((y - predicted)**2))
+    Stat['RMedSE'] = np.sqrt(np.median((y - predicted)**2))
+    Stat['MAE'] = mean_absolute_error(y, predicted)
+    Stat['MSE'] = mean_squared_error(y, predicted)
     
     lr.fit(x, y)
     Stat['Coefs'] = lr.coef_ 
@@ -708,10 +710,12 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
     
     trained_predict = lr.predict(x)
     Stat['tr_R2_score'] = r2_score(y, trained_predict)
-    Stat['tr_RMS'] = np.mean((y - trained_predict)**2)
-    Stat['tr_RMaxS'] = np.max((y - trained_predict)**2)
-    Stat['tr_RMinS'] = np.min((y - trained_predict)**2)
-    Stat['tr_RMedS'] = np.median((y - trained_predict)**2)
+    Stat['tr_RMSE'] = np.sqrt(np.mean((y - trained_predict)**2))
+    Stat['tr_RMaxSE'] = np.sqrt(np.max((y - trained_predict)**2))
+    Stat['tr_RMinSE'] = np.sqrt(np.min((y - trained_predict)**2))
+    Stat['tr_RMedSE'] = np.sqrt(np.median((y - trained_predict)**2))
+    Stat['tr_MAE'] = mean_absolute_error(y, predicted)
+    Stat['tr_MSE'] = mean_squared_error(y, predicted)
     
     Stat['Model'] = lr
 
@@ -722,10 +726,11 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
         ax.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=4)
         ax.set_xlabel('Measured')
         ax.set_ylabel('Predicted')
-        plotTitle = 'R2 : {0:0.3f}, RMS : {1:0.3f}m'.format(Stat['R2_score'], Stat['RMS'])
+        plotTitle = 'R2 : {0:0.3f}, RMSE : {1:0.3f}m,\n MSE : {2:0.3f}m, MAE : {3:0.3f}m'.format(Stat['R2_score'], Stat['RMSE'], Stat['MSE'], Stat['MAE'])
         if SetTitles:
             plotTitle = Titles+'\n'+plotTitle
         ax.set_title(plotTitle)
+        ax.set_aspect('equal', 'box')
     
     return predicted, Stat
 
@@ -796,6 +801,11 @@ def RescalImg(img, bornes):
     return img_rescale
 
 
+
+
+##########################################################################
+# Stats
+
 def GetIndex(y, Thresholds):
     sub_s = -np.inf
     Indexs = []
@@ -804,9 +814,6 @@ def GetIndex(y, Thresholds):
         sub_s = s
     np.sum([len(ind[0]) for ind in Indexs])==len(y)
     return Indexs
-
-##########################################################################
-# Stats
 
 class my_2IterationsModel():
     '''Allows to fit and predicts model with to different steps.'''
