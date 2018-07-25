@@ -930,7 +930,7 @@ def GetNeighboorRegress(x, y, blockSize, winSize, verbose=False):
             count = count +1
             print('Block: {4:d}, at location : [{0:d}:{1:d}] x [{2:d}:{3:d}]'.format(Si.start, Si.stop,
                                                                                      Sj.start, Sj.stop,
-                                                                                    count))
+                                                                                    count),end='\r')
     else:
         for Si, Sj, xx, yy in iterator_test:
             r2[Si, Sj], s[Si, Sj], it[Si, Sj] = multiple_4d_linregress(GetWindows(xx, winSize), 
