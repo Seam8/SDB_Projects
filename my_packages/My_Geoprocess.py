@@ -669,7 +669,7 @@ def InterpPixDepth(Points, Depth, delta=0.01, PlotArg=True, modes=['nearest', 'l
         InterpMean.append(np.nanmean(Z))
     return InterpMean     
 
-def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=True, spliting=None, ArgSplit=None):
+def my_LeaveOneOutCV_Old(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=True, spliting=None, ArgSplit=None):
     '''Perform LeaveOneOut cross validation on target array y(nx1) 
     with the nd descriptors contained in matrix x(nxnd) using the 
     classmodel lr(which must have a .fit() and .predict method).
@@ -733,6 +733,191 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
         ax.set_aspect('equal', 'box')
     
     return predicted, Stat
+
+def Get_DensityMap(m1,m2, patch=2, bandW='scott'):
+    from scipy.stats import gaussian_kde
+    
+    ymax = m2.max()+patch
+    xmin = m1.min()-patch
+    xmax = m1.max()+patch
+    ymin = m2.min()-patch
+    X, Y = np.mgrid[xmin:xmax:100j, ymin:ymax:100j]
+    positions = np.vstack([X.ravel(), Y.ravel()])
+    values = np.vstack([m1, m2])
+    kernel = gaussian_kde(values, bandW)
+    print(kernel.covariance)
+    return np.rot90(np.reshape(kernel(positions).T, X.shape)), [xmin, xmax, ymin, ymax]
+
+def ScatterDensity(ax, xx, yy, Bandw, Map=True,ScatterOptions ={},MapOptions = {}):
+    '''Should perform a density computation for scatter plot color or density map plot
+    but gaussian_kde seems to provide wrong elongated gaussian'''
+    from scipy.stats import gaussian_kde
+    from matplotlib import cm
+
+    
+    if Map: #if map case
+        ext,x_mesh,y_mesh,intensity = Quad_densityMap(xx,yy,h=1, grid_size=0.1)
+        if ScatterOptions== None:
+            ScatterOptions = {'facecolors':(0,0,1), 's':8, 'edgecolor':(0,0,0), 'linewidth':0.2}
+            
+        if MapOptions ==  None:
+            MapOptions = {'cmap':'Oranges'}
+            
+        if np.sum([k=='cmap' for k in MapOptions.keys()])==0:
+            MapOptions['cmap']='Oranges'
+        #MapOptions['extent'] = ext
+        im = ax.pcolormesh(x_mesh,y_mesh,intensity, vmax=np.mean(intensity), **MapOptions)# cmap='Oranges', extent=[xmin, xmax, ymin, ymax])
+        im = ax.scatter(xx,yy,zorder=2,**ScatterOptions) # facecolors=(0,0,1), s=Si, edgecolor=Edgecolor, linewidth=Linewidth)
+        #print(Z.max())
+        #print(Z.min())
+        #print(np.mean(Z))
+        #print(np.median(Z))
+        
+    else: #if simple scatter case
+        
+        kde = gaussian_kde(np.vstack([xx,yy]),Bandw)
+        zz = kde(np.vstack([xx,yy]))
+        if ScatterOptions== None:
+            ScatterOptions = {'cmap':'jet', 's':8, 'edgecolor':None}
+        if np.sum([k=='s' for k in ScatterOptions.keys()])==0:
+            ScatterOptions['s'] = 8
+        if np.sum([k=='cmap' for k in ScatterOptions.keys()])==0:
+            ScatterOptions['cmap'] = 'jet'
+            
+        cc = cm.get_cmap(ScatterOptions['cmap'])((zz-zz.min())/(zz.max()-zz.min()))
+        ScatterOptions['facecolors'] = cc
+        im = ax.scatter(xx,yy,zorder=2, **ScatterOptions) #facecolors=cc, s=Si, edgecolor=Edgecolor, linewidth=Linewidth)
+        
+    return im
+
+def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=True, 
+                     Density=False, Map=False, bandw='scott', ScatterOpt={'s':8}, MapOpt={},
+                     spliting=None, ArgSplit=None):
+    '''Perform LeaveOneOut cross validation on target array y(nx1) 
+    with the nd descriptors contained in matrix x(nxnd) using the 
+    classmodel lr(which must have a .fit() and .predict method).
+    
+    Plot the result. if ax, plot is made in ax system axe. 
+    If SetTitles=True, Titles is used as title for plot'''
+    
+    from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+    
+    if spliting == None:
+        from sklearn.model_selection import LeaveOneOut
+        loo = LeaveOneOut()
+    else: 
+        loo = spliting(**ArgSplit)
+        
+    loo.get_n_splits(x)
+    predicted = np.full(y.shape,np.nan, np.float)
+    #lr = linear_model.LinearRegression()
+    counterCheck = 0
+
+    for train_index, test_index in loo.split(x):
+        lr.fit(x[train_index], y[train_index])
+        predicted[test_index] = lr.predict(x[test_index])
+        counterCheck = counterCheck + 1
+    if spliting==None:    
+        assert counterCheck == len(y)
+    
+    Stat = {}
+    Stat['R2_score'] = r2_score(y, predicted)
+    Stat['RMSE'] = np.sqrt(np.mean((y - predicted)**2))
+    Stat['RMaxSE'] = np.sqrt(np.max((y - predicted)**2))
+    Stat['RMinSE'] = np.sqrt(np.min((y - predicted)**2))
+    Stat['RMedSE'] = np.sqrt(np.median((y - predicted)**2))
+    Stat['MAE'] = mean_absolute_error(y, predicted)
+    Stat['MSE'] = mean_squared_error(y, predicted)
+    Stat['Bias'] = np.mean(predicted) - np.mean(y)  
+    Stat['StdRatio'] = np.std(y) / np.std(predicted)
+    
+    lr.fit(x, y)
+    Stat['Coefs'] = lr.coef_ 
+    Stat['Intercept'] = lr.intercept_  
+    
+    trained_predict = lr.predict(x)
+    Stat['tr_R2_score'] = r2_score(y, trained_predict)
+    Stat['tr_RMSE'] = np.sqrt(np.mean((y - trained_predict)**2))
+    Stat['tr_RMaxSE'] = np.sqrt(np.max((y - trained_predict)**2))
+    Stat['tr_RMinSE'] = np.sqrt(np.min((y - trained_predict)**2))
+    Stat['tr_RMedSE'] = np.sqrt(np.median((y - trained_predict)**2))
+    Stat['tr_MAE'] = mean_absolute_error(y, predicted)
+    Stat['tr_MSE'] = mean_squared_error(y, predicted)
+    
+    Stat['Model'] = lr
+
+    if DoPlot:
+        if ax==None:
+            fig, ax = plt.subplots()
+        ax.plot([0, 25], [0, 25], 'k--', lw=1, zorder=1)
+        if Density:
+            im = ScatterDensity(ax, y, predicted,  
+                                Bandw=bandw, Map=Map, 
+                                ScatterOptions=ScatterOpt, MapOptions=MapOpt)
+        else:
+            im = ax.scatter(y, predicted,zorder=2, **ScatterOpt)
+        ax.set_xlabel('Measured depth ($h$)')
+        ax.set_ylabel('Estimated depth ($\hat h$)')
+        Printer = {'R2v' : Stat['R2_score'], 'Bv' : Stat['Bias'], 'RMSv' : Stat['RMSE'],
+                   'MSEv' : Stat['MSE'], 'MAEv' : Stat['MAE'],
+                   'R2n' :'$R^2$', 'Bn' :'$Bias$', 'RMSn' :'$E_{RMS}$', 
+                   'MSEn' :'$E_{MS}$', 'MAEn' :'$E_{MA}$'}
+        plotTitle = '{R2n} : {R2v:0.3f}, {Bn} : {Bv:0.3f}m, {RMSn} : {RMSv:0.3f}m,\n {MSEn} : {MSEv:0.3f}m,  {MAEn} : {MAEv:0.3f}m '.format(**Printer)
+        if SetTitles:
+            plotTitle = Titles+'\n'+plotTitle
+        ax.set_title(plotTitle)
+        ax.set_aspect('equal','box')
+    
+    return predicted, Stat
+
+def Quad_densityMap(x,y,h=0.5, grid_size=1):
+    '''Perform a computaion of density map.
+    Thank you the web'''
+    import math
+
+    #GETTING X,Y MIN AND MAX
+    x_min=min(x)
+    x_max=max(x)
+    y_min=min(y)
+    y_max=max(y)
+
+    #CONSTRUCT GRID
+    x_grid=np.arange(x_min-h,x_max+h,grid_size)
+    y_grid=np.arange(y_min-h,y_max+h,grid_size)
+    x_mesh,y_mesh=np.meshgrid(x_grid,y_grid)
+
+    #GRID CENTER POINT
+    xc=x_mesh+(grid_size/2)
+    yc=y_mesh+(grid_size/2)
+
+    #FUNCTION TO CALCULATE INTENSITY WITH QUARTIC KERNEL
+    def kde_quartic(d,h):
+        dn=d/h
+        P=(15/16)*(1-dn**2)**2
+        return P
+
+    #PROCESSING
+    intensity_list=[]
+    for j in range(len(xc)):
+        intensity_row=[]
+        for k in range(len(xc[0])):
+            kde_value_list=[]
+            for i in range(len(x)):
+                #CALCULATE DISTANCE
+                d=math.sqrt((xc[j][k]-x[i])**2+(yc[j][k]-y[i])**2) 
+                if d<=h:
+                    p=kde_quartic(d,h)
+                else:
+                    p=0
+                kde_value_list.append(p)
+            #SUM ALL INTENSITY VALUE
+            p_total=sum(kde_value_list)
+            intensity_row.append(p_total)
+        intensity_list.append(intensity_row)
+
+    #HEATMAP OUTPUT    
+    intensity=np.array(intensity_list)
+    return [x_min, x_max, y_min, y_max], x_mesh,y_mesh,intensity
 
 def getScene(xlabel, ylabel, zlabel, xtick, ytick):
     scene = dict(
