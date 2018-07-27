@@ -566,19 +566,46 @@ def output_multipolygone_from_raster_layer(Classif,raster_NoDataValue,classes,cl
  
 ##########################################################################
 # Stats
-    
-def plot_ResRegPlots(X, y, plotsPerRows=3, Scale=False, SetTitles= False, Titles=None):
+def plot_ResRegPlots(X, y, i=None, axes=None, plotsPerRows=3, Scale=False, SetTitles= False, Titles=None, ScatterOpt={'c':'k'}):
     '''Plot each residual regression plot of a descriptor matrix X~[n_samples, n_descriptors]
     with a target array y~[n_samples]'''
-    
-    fig , axes = plt.subplots(int(np.ceil(X.shape[1]/plotsPerRows)),plotsPerRows, figsize=(15,15))
-    fig.suptitle('Residual regression plots')
-    fig.subplots_adjust(hspace=.5, top=.9)
-    for i, ax in enumerate(fig.axes):
-        if i >= X.shape[1]:
-            ax.set_visible(False)
-            continue
+    from sklearn.linear_model import LinearRegression
+    if axes==None:
+        fig , axes = plt.subplots(int(np.ceil(X.shape[1]/plotsPerRows)),plotsPerRows, figsize=(15,15))
+        fig.suptitle('Residual regression plots')
+        fig.subplots_adjust(hspace=.5, top=.9)
+        for i, ax in enumerate(fig.axes):
+            if i >= X.shape[1]:
+                ax.set_visible(False)
+                continue
 
+            lr = LinearRegression(fit_intercept=True)
+            index = np.arange(X.shape[1])!=i
+            X_others = X[:,index]
+            x = X[:,~index]
+
+            ResY_others = y - lr.fit(X_others, y).predict(X_others)
+            ResX_others = x - lr.fit(X_others, x).predict(X_others)
+
+            if Scale:
+                ResY_others = (ResY_others - np.mean(ResY_others))/np.std(ResY_others)
+                ResX_others = (ResX_others - np.mean(ResX_others))/np.std(ResX_others)
+
+            lr.fit(ResX_others, ResY_others)
+
+            plotIndex = np.array([np.argmin(ResX_others), np.argmax(ResX_others)])  
+            if SetTitles :
+                BandStr = Titles[i]
+            else:
+                BandStr = 'Band : '+str(i)
+
+            ax.scatter(ResX_others, ResY_others, **ScatterOpt)
+            ax.plot(ResX_others[plotIndex,:], lr.predict(ResX_others[plotIndex,:]))
+            ax.set_title(BandStr + ', Coefficient: ' + str(lr.coef_))
+            ax.set_ylabel('Res(y ~ Xs)')
+            ax.set_xlabel('Res(x ~ Xs)')
+    else:
+        ax = axes
         lr = LinearRegression(fit_intercept=True)
         index = np.arange(X.shape[1])!=i
         X_others = X[:,index]
@@ -586,20 +613,20 @@ def plot_ResRegPlots(X, y, plotsPerRows=3, Scale=False, SetTitles= False, Titles
 
         ResY_others = y - lr.fit(X_others, y).predict(X_others)
         ResX_others = x - lr.fit(X_others, x).predict(X_others)
-        
+
         if Scale:
             ResY_others = (ResY_others - np.mean(ResY_others))/np.std(ResY_others)
             ResX_others = (ResX_others - np.mean(ResX_others))/np.std(ResX_others)
-            
+
         lr.fit(ResX_others, ResY_others)
-        
+
         plotIndex = np.array([np.argmin(ResX_others), np.argmax(ResX_others)])  
         if SetTitles :
             BandStr = Titles[i]
         else:
             BandStr = 'Band : '+str(i)
 
-        ax.scatter(ResX_others, ResY_others)
+        ax.scatter(ResX_others, ResY_others, **ScatterOpt)
         ax.plot(ResX_others[plotIndex,:], lr.predict(ResX_others[plotIndex,:]))
         ax.set_title(BandStr + ', Coefficient: ' + str(lr.coef_))
         ax.set_ylabel('Res(y ~ Xs)')
@@ -726,11 +753,11 @@ def my_LeaveOneOutCV_Old(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlo
         ax.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=4)
         ax.set_xlabel('Measured')
         ax.set_ylabel('Predicted')
-        plotTitle = 'R2 : {0:0.3f}, RMSE : {1:0.3f}m,\n MSE : {2:0.3f}m, MAE : {3:0.3f}m'.format(Stat['R2_score'], Stat['RMSE'], Stat['MSE'], Stat['MAE'])
+        plotTitle = 'R2 : {0:0.3f}\n$(m)$ RMSE : {1:0.3f},\n MSE : {2:0.3f}, MAE : {3:0.3f}'.format(Stat['R2_score'], Stat['RMSE'], Stat['MSE'], Stat['MAE'])
         if SetTitles:
             plotTitle = Titles+'\n'+plotTitle
         ax.set_title(plotTitle)
-        ax.set_aspect('equal', 'box')
+        ax.set_aspect('equal')
     
     return predicted, Stat
 
@@ -866,8 +893,10 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
         if SetTitles:
             plotTitle = Titles+'\n'+plotTitle
         ax.set_title(plotTitle)
-        ax.set_aspect('equal','box')
-    
+        try:
+            ax.set_aspect('equal')
+        except:
+            print('is adjustable?')
     return predicted, Stat
 
 def Quad_densityMap(x,y,h=0.5, grid_size=1):
@@ -997,13 +1026,13 @@ def GetIndex(y, Thresholds):
     for s in Thresholds:
         Indexs.append(np.where(np.logical_and(y<=s, y>sub_s)))
         sub_s = s
-    np.sum([len(ind[0]) for ind in Indexs])==len(y)
+    assert np.sum([len(ind[0]) for ind in Indexs])==len(y)
     return Indexs
 
 class my_2IterationsModel():
     '''Allows to fit and predicts model with to different steps.'''
     def __init__(self, Model, Thresholds, ModelsArguments={}):
-        Thresholds.append(np.inf)
+        Thresholds.append(np.inf) # extremly important Line !!! allow the last class, outside thresholds
         self.Thres = Thresholds
         self.Models_ = [Model(**ModelsArguments) for s in self.Thres]
         self.GlobModel = Model(**ModelsArguments)
@@ -1021,8 +1050,8 @@ class my_2IterationsModel():
             if len(x[ind])!=0:
                 self.Models_[i].fit(x[ind], y[ind])
                 
-        self.coef_ = [m.coef_ for m in self.Models_]
-        self.intercept_ = [m.intercept_ for m in self.Models_]
+        self.coef_ = {i : m.coef_ for i, m in enumerate(self.Models_) if len(x[Indexs[i]])!=0}
+        self.intercept_ = {i : m.intercept_ for i, m in enumerate(self.Models_) if len(x[Indexs[i]])!=0}
             
     def predict(self, x):
         self.y_First = self.GlobModel.predict(x)
@@ -1122,3 +1151,38 @@ def GetNeighboorRegress(x, y, blockSize, winSize, verbose=False):
                                                                        GetWindows(yy, winSize))
         
     return r2, s, it
+
+##########################################################################
+# Ordered Modif
+def GetOrdered_pixel(ScatterIndex, SurveyValues, px, py):
+    px = np.asarray([int(pxx) for pxx in px])
+    py = np.asarray([int(pyy) for pyy in py])
+    
+    RasterInd =  np.full(ScatterIndex.shape, False)
+    npx, npy, ndepth = [], [], []
+    for pxx, pyy in zip(px,py):
+        if ScatterIndex[pyy,pxx]:
+            if RasterInd[pyy, pxx] == False:
+                RasterInd[pyy, pxx] = True
+                npx.append(pxx)
+                npy.append(pyy)
+                ndepth.append(SurveyValues[pyy, pxx])
+            
+    npx = np.asarray(npx)
+    npy = np.asarray(npy)
+    ndepth = np.asarray(ndepth)
+    return npx, npy, ndepth
+
+def GetOrdered_Data(X, px,py, Shape):
+    px = np.asarray([int(pxx) for pxx in px])
+    py = np.asarray([int(pyy) for pyy in py])
+    
+    RasterInd =  np.full(Shape, False)
+    Data_x = []
+    for pxx, pyy in zip(px,py):
+            assert RasterInd[pyy, pxx] == False
+            RasterInd[pyy, pxx] = True
+            Data_x.append(X[pyy, pxx,:])
+
+    Data_x = np.asarray(Data_x)
+    return Data_x
