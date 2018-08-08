@@ -1,0 +1,50 @@
+<?xml version="1.0"?><svg width="450" height="500" xmlns="http://www.w3.org/2000/svg">
+ <title>compass</title>
+ <metadata id="metadata2887">image/svg+xml</metadata>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="g3446" transform="matrix(3.12973, 0, 0, 3.12973, -351.716, -2.37831)">
+   <g font-size="12" transform="matrix(0.344216, -0.336555, 0.344216, 0.336555, 114.703, 73.2462)" id="g1761">
+    <rect fill="#ffffff" fill-rule="evenodd" stroke-width="1.0000000pt" y="102.58115" x="81.479645" height="17.907625" width="18.802979" id="rect1763"/>
+    <g id="g1765">
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.37718" id="path1767" d="m90.618622,102.576591l0.165771,-80.084162l0,0l-9.114395,79.773157l0,0l8.948624,0.311005z"/>
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1769" d="m90.856941,93.352943l-9.124702,9.123985l9.124702,9.123993"/>
+     <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1771" d="m90.691246,111.600998l9.069435,-9.289696m-9.115234,0.060402l0.386627,-80.084202l0,0l8.838219,79.994198l-0.055305,-0.110497"/>
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.37718" id="path1773" d="m81.94902,111.588066l-80.089791,-0.165764l0,0l79.778763,9.113792l0,0l0.311028,-8.948029z"/>
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1775" d="m72.724648,111.349556l9.124611,9.124084l9.124611,-9.124084"/>
+     <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1777" d="m90.97403,111.515198l-9.290344,-9.068802m0.060402,9.114601l-80.089803,-0.386604l0,0l79.999799,-8.837593l-0.110512,0.055298"/>
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.37718" id="path1779" d="m90.88237,120.37381l-0.165771,80.084152l0,0l9.114395,-79.773148l0,0l-8.948624,-0.311005z"/>
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1781" d="m90.643959,129.598053l9.124702,-9.123985l-9.124702,-9.123993"/>
+     <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1783" d="m90.809654,111.349701l-9.069435,9.289696m9.115234,-0.060402l-0.386627,80.084198l0,0l-8.838219,-79.994194l0.055305,0.110497"/>
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.37718" id="path1785" d="m99.707977,111.362442l80.089798,0.165764l0,0l-79.77877,-9.113792l0,0l-0.311028,8.948029z"/>
+     <path fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1787" d="m108.932358,111.60125l-9.124611,-9.124084l-9.124611,9.124084"/>
+     <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.375" id="path1789" d="m90.683167,111.435104l9.290344,9.068802m-0.060402,-9.114594l80.089806,0.386597l0,0l-79.999802,8.837601l0.110512,-0.055298"/>
+    </g>
+   </g>
+   <rect fill="#ffffff" fill-rule="evenodd" stroke-width="1.0000000pt" y="73.929436" x="178.93785" height="9.006422" width="9.051981" id="rect1859" transform="matrix(0.999931, 0.0117559, 0.010771, 0.999942, 0, 0)"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.186527" id="path1863" d="m184.120621,76.354538l-0.354034,-38.549858l0,0l-3.955322,38.351669l0,0l4.309357,0.198189z"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.185922" id="path1865" d="m184.185455,71.915771l-4.343002,4.342659l4.441849,4.441521"/>
+   <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.180512" id="path1867" d="m184.204544,80.699081l4.315506,-4.422729m-4.387543,-0.020302l-0.247711,-38.548679l0,0l4.687851,38.555332l-0.027222,-0.05349"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.186527" id="path1869" d="m179.996124,80.6455l-38.554398,-0.513657l0,0l38.45314,4.819359l0,0l0.101257,-4.305702z"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.185922" id="path1871" d="m175.554413,80.480728l4.441833,4.441559l4.342957,-4.342705"/>
+   <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.180512" id="path1873" d="m184.34021,80.659317l-4.521301,-4.415848m0.078461,4.387894l-38.555588,-0.619949l0,0l38.462296,-3.820862l-0.052902,0.026016"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.186527" id="path1875" d="m184.344055,84.923111l0.354034,38.549858l0,0l3.955338,-38.351669l0,0l-4.309372,-0.198189z"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.185922" id="path1877" d="m184.279236,89.362259l4.342987,-4.342659l-4.441849,-4.441513"/>
+   <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.180512" id="path1879" d="m184.260132,80.57872l-4.315506,4.422729m4.387558,0.020302l0.247711,38.548676l0,0l-4.687866,-38.555328l-0.028503,-0.057968"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.186527" id="path1881" d="m188.543655,80.633087l38.554398,0.513657l0,0l-38.45314,-4.819351l0,0l-0.101257,4.305695z"/>
+   <path fill-rule="evenodd" stroke="#000000" stroke-width="0.185922" id="path1883" d="m192.985367,80.797989l-4.441833,-4.441566l-4.342957,4.342705"/>
+   <path fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="0.180512" id="path1885" d="m184.199677,80.619186l4.521286,4.41584m-0.078445,-4.387886l38.555588,0.619957l0,0l-38.462296,3.820854l0.052902,-0.026009"/>
+  </g>
+  <text fill="black" font-size="47.825783" font-style="italic" font-weight="normal" stroke-width="1.0000000pt" font-family="Palatino Linotype" transform="translate(0, 9) scale(0.966073, 1.03512)" id="text1887" y="97.126" x="212.392">
+   <tspan id="tspan1889" y="97.126" x="212.392">N</tspan>
+  </text>
+  <text fill="black" font-size="52.966011" font-weight="bold" stroke-width="1.0000000pt" font-family="Palatino Linotype" transform="translate(0, -6) scale(1.04402, 0.957837)" id="text1891" y="452.174" x="199.168">
+   <tspan id="tspan1893" y="452.174" x="199.168">S</tspan>
+  </text>
+  <text fill="black" font-size="52.32835" font-style="italic" font-weight="normal" stroke-width="1.0000000pt" font-family="Palatino Linotype" transform="translate(-4) scale(0.967902, 1.03316)" id="text1895" y="259.452" x="42.9927">W</text>
+  <text fill="black" font-size="54.677143" font-style="italic" font-weight="normal" stroke-width="1.0000000pt" font-family="Palatino Linotype" transform="translate(-12) scale(1.01135, 0.988781)" id="text1899" y="271.098" x="360.47">
+   <tspan id="tspan1901" y="271.098" x="369.369">E</tspan>
+  </text>
+ </g>
+</svg>
