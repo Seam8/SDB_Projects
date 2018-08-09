@@ -14,6 +14,16 @@ from shapely import geometry as geom
 from scipy.interpolate import griddata
 from skimage import exposure
 
+##########################################################################
+# String Comparision
+
+def Get_StrDiff(a,b):
+    from difflib import Differ
+    from pprint import pprint
+    
+    d = Differ()
+    pprint(list(d.compare(a.splitlines(1), b.splitlines(1))))
+    return
 
 ##########################################################################
 # Files paths definition
@@ -301,7 +311,9 @@ def write_raster(fname, data, geo_transform, projection, DriverName='GTiff'):
             band.WriteArray(data[:,:])
     dataset = None  # Close the file
     
-
+def getNIRTifPath(data_path, endswith='rhos_833.tif'):
+    '''return a list of path name contained in the folder "data_path" ending by "endswith" string.'''
+    return [f for f in os.listdir(data_path) if f.endswith(endswith)]
     
 def write_raster2(fname, data, geo_transform, projection, DriverName="GTiff", formatMem=gdal.GDT_UInt16, Metadata=None, Offset=None ):
     """Create a GeoTIFF file with the given data."""
@@ -401,16 +413,27 @@ def Get_R2(coeff, Samples, NIRSamples, NBands):
                 R2.append([])
     return R2
 
-def create_mask_from_vector(vector_data_path, cols, rows, geo_transform,
-                            projection, target_value=1, format=gdal.GDT_UInt16):
+def create_mask_from_vector(vector_data_path, cols, rows, 
+                            geo_transform,
+                            projection, 
+                            NLayerAssert = None, AtFilterExp = None,
+                            target_value=1, format=gdal.GDT_UInt16):
     """Rasterize the given vector (wrapper for gdal.RasterizeLayer)."""
+    
     data_source = gdal.OpenEx(vector_data_path, gdal.OF_VECTOR)
     assert data_source.GetLayerCount() > 0
+    if not NLayerAssert == None:
+        assert data_source.GetLayerCount() == NLayerAssert
+        
     layer = data_source.GetLayer(0)
+    if not AtFilterExp == None:
+        layer.SetAttributeFilter(AtFilterExp)
+    
     driver = gdal.GetDriverByName('MEM')  # In memory dataset
-    target_ds = driver.Create('', cols, rows, 1, gdal.GDT_UInt16)
+    target_ds = driver.Create('', cols, rows, 1, format)
     target_ds.SetGeoTransform(geo_transform)
     target_ds.SetProjection(projection)
+    
     gdal.RasterizeLayer(target_ds, [1], layer, burn_values=[target_value])
     return target_ds
 
