@@ -220,9 +220,14 @@ def recordPosition(path_filname, Set):
     with open(path_filname, 'w+') as mon_fichier:
         for i in range(len(Set[2])):
             print( Set[1][i,0], ';', Set[1][i,1], file= mon_fichier)
-            
+
+def Get_ProjectedCoordinate(GT_ds, uv):
+    x = GT_ds[0] + uv[1]*GT_ds[1] + uv[0]*GT_ds[2]
+    y = GT_ds[3] + uv[1]*GT_ds[4] + uv[0]*GT_ds[5] 
+    return (x, y)
+
 def GetLonLat(Pix, src_ds):
-    ''' Pix: Nx2 with N number of pixels '''
+    ''' Pix: Nx2 with N number of pixels and Pix[:,0] is col and Pix[:,1] is row '''
     GT_ds = src_ds.GetGeoTransform()
     LonLat = np.empty((Pix.shape[0], 2), dtype= np.float)
     LonLatProj= np.empty((Pix.shape[0], 2), dtype= np.float)
