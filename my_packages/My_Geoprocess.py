@@ -157,7 +157,7 @@ def GetXml_byFootprint2(RePath_xmlDirectory, min_E, max_E, min_N, max_N, FromYea
             
     return Selected_xml, LoopCount, count
 
-def GetSurvey_byDepthFP(XML_List, RePath_xmlDirectory, E_range, N_range, max_Depth=40):
+def GetSurvey_byDepthFP(XML_List, RePath_xmlDirectory, E_range, N_range, max_Depth=100):
     # initilise
     Set_Point = []
     Set_Depth = []
@@ -169,11 +169,11 @@ def GetSurvey_byDepthFP(XML_List, RePath_xmlDirectory, E_range, N_range, max_Dep
         try:
             DepthPt = pd.read_csv(RePath_xmlDirectory+'/'+xml[:-10]+'ascii', delim_whitespace=True, header=None, names=['Lat','Lon','Depth'])
             # filter by depth
-            DepthPt_40m = DepthPt[DepthPt['Depth']<=max_Depth]
-            #DepthPt_40m = DepthPt_40m[0<DepthPt_40m['Depth']]
+            DepthPt_Max = DepthPt[DepthPt['Depth']<=max_Depth]
+            #DepthPt_Max = DepthPt_Max[0<DepthPt_Max['Depth']]
             # loads points
-            current_pt =  DepthPt_40m[['Lon','Lat']].values
-            current_depth =  DepthPt_40m['Depth'].values
+            current_pt =  DepthPt_Max[['Lon','Lat']].values
+            current_depth =  DepthPt_Max['Depth'].values
             # looks for points inside footprint
             index = isInsid2(current_pt[:,0], current_pt[:,1], E_range, N_range)
             # records points
