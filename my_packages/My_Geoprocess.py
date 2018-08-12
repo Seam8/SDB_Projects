@@ -904,7 +904,7 @@ def my_LeaveOneOutCV(lr, x, y, ax=None, SetTitles= False, Titles=None, DoPlot=Tr
     if DoPlot:
         if ax==None:
             fig, ax = plt.subplots()
-        ax.plot([0, 25], [0, 25], 'k--', lw=1, zorder=1)
+        ax.plot([0, y.max()], [0, y.max()], 'k--', lw=1, zorder=1)
         if Density:
             im = ScatterDensity(ax, y, predicted,  
                                 Bandw=bandw, Map=Map, 
