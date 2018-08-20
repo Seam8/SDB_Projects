@@ -1036,10 +1036,11 @@ def GetSparseCrop(fname, RastDim,xof, yof , win_xs , win_ys):
     return Rast
 
 def RescalImg(img, bornes):
+    NanInd = np.sum(np.isnan(img),axis=2)>0
     img_rescale = np.full(img.shape, np.nan, dtype=img.dtype)
     for i in range(img.shape[2]):
-        p2, p98 = np.percentile(img[:,:,i], (bornes[0], bornes[1]))
-        img_rescale[:,:,i] = exposure.rescale_intensity(img[:,:,i], in_range=(p2, p98))
+        p2, p98 = np.percentile(img[~NanInd,i], (bornes[0], bornes[1]))
+        img_rescale[~NanInd,i] = exposure.rescale_intensity(img[~NanInd,i], in_range=(p2, p98))
     return img_rescale
 
 
