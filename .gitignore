@@ -4,11 +4,6 @@
 *.zip
 *.SAFE/
 *Images/
-*.shp
-*.prj
-*.qpj
-*.shx
-*.dbf
 *.npz
 *.ascii
 *.JPG
